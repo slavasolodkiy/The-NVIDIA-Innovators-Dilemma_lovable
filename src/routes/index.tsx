@@ -207,6 +207,11 @@ function App() {
       {/* QUIZ */}
       <Section id="quiz" label={t.quiz.label} headline={t.quiz.headline} lede={t.quiz.lede}>
         <Quiz />
+        <div className="mt-4 flex justify-end">
+          <button onClick={resetProgress} className="mono text-[10px] tracking-widest text-[var(--graphite)] underline hover:text-[var(--orange)]">
+            ↺ RESET PROGRESS
+          </button>
+        </div>
       </Section>
 
       {/* BUY */}
