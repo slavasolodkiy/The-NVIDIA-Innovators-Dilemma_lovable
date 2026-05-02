@@ -59,9 +59,33 @@ function Ticker() {
 
 function App() {
   const { t } = useI18n();
+  const rootRef = useRef<HTMLDivElement | null>(null);
+
+  // Tap-to-glitch: any tap dispatches a brief RGB-split shake to the whole app.
+  function tapBurst(e: React.PointerEvent) {
+    const root = rootRef.current;
+    if (!root) return;
+    // ignore taps on form controls
+    const tag = (e.target as HTMLElement).tagName;
+    if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+    root.classList.remove("tap-glitch");
+    // force reflow to restart animation
+    void root.offsetWidth;
+    root.classList.add("tap-glitch");
+    window.setTimeout(() => root.classList.remove("tap-glitch"), 380);
+  }
+
+  function resetProgress() {
+    if (typeof window === "undefined") return;
+    if (!confirm("Reset all quiz progress and badges?")) return;
+    localStorage.removeItem("tnid:quiz");
+    location.reload();
+  }
 
   return (
-    <div className="min-h-screen pb-24">
+    <div ref={rootRef} onPointerDown={tapBurst} className="min-h-screen pb-24 relative">
+      <PWARegister />
+
       {/* TOP BAR */}
       <div className="sticky top-0 z-50 bg-[var(--cream)] border-b border-[var(--ink)]">
         <div className="px-4 py-2 flex justify-between items-center mono text-[10px] tracking-widest">
@@ -74,8 +98,9 @@ function App() {
       </div>
 
       {/* HERO */}
-      <section className="px-5 pt-8 pb-10 scanlines">
-        <div className="relative mb-6">
+      <section className="px-5 pt-8 pb-10 scanlines relative overflow-hidden">
+        <NoiseCanvas opacity={0.14} />
+        <div className="relative mb-6 z-[1]">
           <img src={bookCover} alt={t.meta.title} className="w-full max-w-[320px] mx-auto block shadow-[0_4px_0_var(--ink),0_20px_40px_-10px_rgba(0,0,0,0.3)]" />
           <img src={logoMark} alt="" aria-hidden className="absolute -top-3 -right-1 w-20 opacity-90 mix-blend-multiply" />
         </div>
@@ -123,17 +148,22 @@ function App() {
 
       {/* CRACKS */}
       <Section label={t.cracks.label} headline={t.cracks.headline} lede={t.cracks.lede}>
-        <div className="snap-row flex overflow-x-auto gap-3 -mx-5 px-5 snap-x snap-mandatory pb-2">
-          {t.cracks.items.map(c => (
-            <div key={c.id} className="snap-start shrink-0 w-[78%] border-2 border-[var(--ink)] p-5 bg-[var(--cream)]">
-              <div className="mono text-[10px] tracking-widest text-[var(--orange)] font-bold mb-2">[{c.id}]</div>
-              <h4 className="text-lg font-black leading-tight mb-3">{c.title}</h4>
-              <p className="text-sm leading-relaxed mb-4">{c.body}</p>
-              <div className="mono text-[10px] tracking-widest text-[var(--graphite)] uppercase border-t border-[var(--ink)] pt-2">{c.stat}</div>
-            </div>
-          ))}
-        </div>
+        <SwipeDeck
+          count={t.cracks.items.length}
+          renderCard={(i) => {
+            const c = t.cracks.items[i];
+            return (
+              <div className="h-full border-2 border-[var(--ink)] p-5 bg-[var(--cream)] flex flex-col shadow-[0_6px_0_var(--ink)]">
+                <div className="mono text-[10px] tracking-widest text-[var(--orange)] font-bold mb-2">[{c.id}] · {String(i+1).padStart(2,"0")} / {String(t.cracks.items.length).padStart(2,"0")}</div>
+                <h4 className="text-xl font-black leading-tight mb-3">{c.title}</h4>
+                <p className="text-sm leading-relaxed mb-4 flex-1">{c.body}</p>
+                <div className="mono text-[10px] tracking-widest text-[var(--graphite)] uppercase border-t border-[var(--ink)] pt-2">{c.stat}</div>
+              </div>
+            );
+          }}
+        />
       </Section>
+
 
       {/* PILLARS */}
       <Section label={t.pillars.label} headline={t.pillars.headline} lede={t.pillars.lede}>
