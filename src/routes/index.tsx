@@ -122,7 +122,7 @@ function App() {
         </div>
         <div className="flex flex-wrap gap-2">
           <a className="btn-mono accent" href={t.buy.stores[0].url} target="_blank" rel="noopener">{t.hero.cta1} ↗</a>
-          <a className="btn-mono alt" href={t.buy.stores[10].url} target="_blank" rel="noopener">{t.hero.cta2} ↗</a>
+          <a className="btn-mono alt" href={t.buy.stores[t.buy.stores.length - 1].url} target="_blank" rel="noopener">{t.hero.cta2} ↗</a>
           <a className="btn-mono" href="#listen">{t.hero.cta3} ↗</a>
           <a className="btn-mono lime" href="#qa">{t.hero.cta4}</a>
         </div>
