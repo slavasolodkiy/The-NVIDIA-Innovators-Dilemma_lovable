@@ -8,6 +8,7 @@ import { Quiz } from "@/components/quiz";
 import { SwipeDeck } from "@/components/swipe-deck";
 import { NoiseCanvas } from "@/components/noise-canvas";
 import { PWARegister } from "@/components/pwa-register";
+import { OfflineDownload } from "@/components/offline-download";
 import bookCover from "@/assets/book.png";
 import logoMark from "@/assets/logo.png";
 
@@ -125,6 +126,7 @@ function App() {
           <a className="btn-mono alt" href={t.buy.stores[t.buy.stores.length - 1].url} target="_blank" rel="noopener">{t.hero.cta2} ↗</a>
           <a className="btn-mono" href="#listen">{t.hero.cta3} ↗</a>
           <a className="btn-mono lime" href="#qa">{t.hero.cta4}</a>
+          <OfflineDownload />
         </div>
       </section>
 
