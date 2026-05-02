@@ -92,13 +92,6 @@ body {
   animation: scanline 0.36s linear;
 }
 
-  0%,100% { transform: translateX(0); filter: none; }
-  20% { transform: translateX(-4px); filter: hue-rotate(15deg); }
-  40% { transform: translateX(4px); filter: hue-rotate(-15deg); }
-  60% { transform: translateX(-3px); }
-  80% { transform: translateX(3px); }
-}
-
 .glitch-text {
   position: relative;
   display: inline-block;
