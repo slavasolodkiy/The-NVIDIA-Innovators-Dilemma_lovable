@@ -193,7 +193,7 @@
   },
   "listen": {
     "label": "視聴・聴取・閲覧",
-    "headline": "他の形式の書籍。",
+    "headline": "本書について簡単に：",
     "lede": "スライドデッキ、科学的記録、ポッドキャストウォークスルー、ビデオ。",
     "items": [
       {
@@ -221,13 +221,15 @@
         "type": "Spotify",
         "title": "ポッドキャストウォークスルー",
         "desc": "Spotifyで聴く。",
-        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H",
+        "embed": "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H"
       },
       {
         "type": "Apple Podcasts",
         "title": "ポッドキャストウォークスルー",
         "desc": "Apple Podcastsで聴く。",
-        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324",
+        "embed": "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
       }
     ]
   },

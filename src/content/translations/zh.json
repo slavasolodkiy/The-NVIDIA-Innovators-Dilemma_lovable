@@ -193,7 +193,7 @@
   },
   "listen": {
     "label": "观看 · 收听 · 浏览",
-    "headline": "其他形式的书籍。",
+    "headline": "本书简介：",
     "lede": "幻灯片演示，科学记录，播客导读，视频。",
     "items": [
       {
@@ -221,13 +221,15 @@
         "type": "Spotify",
         "title": "播客导读",
         "desc": "在Spotify收听。",
-        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H",
+        "embed": "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H"
       },
       {
         "type": "Apple Podcasts",
         "title": "播客导读",
         "desc": "在Apple Podcasts收听。",
-        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324",
+        "embed": "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
       }
     ]
   },

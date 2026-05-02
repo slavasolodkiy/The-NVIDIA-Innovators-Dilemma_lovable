@@ -193,7 +193,7 @@
   },
   "listen": {
     "label": "VER · ESCUCHAR · NAVEGAR",
-    "headline": "El libro en otros formatos.",
+    "headline": "Brevemente sobre el libro:",
     "lede": "Presentación de diapositivas, registro científico, guía de podcast, video.",
     "items": [
       {
@@ -221,13 +221,15 @@
         "type": "Spotify",
         "title": "Guía de podcast",
         "desc": "Escuchar en Spotify.",
-        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H",
+        "embed": "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H"
       },
       {
         "type": "Apple Podcasts",
         "title": "Guía de podcast",
         "desc": "Escuchar en Apple Podcasts.",
-        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324",
+        "embed": "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
       }
     ]
   },

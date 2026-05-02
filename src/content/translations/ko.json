@@ -193,7 +193,7 @@
   },
   "listen": {
     "label": "시청 · 청취 · 탐색",
-    "headline": "다른 형식으로 된 책.",
+    "headline": "책에 대한 간략한 소개:",
     "lede": "슬라이드 자료, 학술 기록, 팟캐스트 워크스루, 비디오.",
     "items": [
       {
@@ -221,13 +221,15 @@
         "type": "Spotify",
         "title": "팟캐스트 워크스루",
         "desc": "Spotify에서 들으세요.",
-        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H",
+        "embed": "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H"
       },
       {
         "type": "Apple Podcasts",
         "title": "팟캐스트 워크스루",
         "desc": "Apple Podcasts에서 들으세요.",
-        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324",
+        "embed": "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
       }
     ]
   },

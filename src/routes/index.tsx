@@ -7,6 +7,7 @@ import { QASection } from "@/components/qa";
 import { Quiz } from "@/components/quiz";
 import { SwipeDeck } from "@/components/swipe-deck";
 import { NoiseCanvas } from "@/components/noise-canvas";
+import { OfflineEmbed } from "@/components/offline-embed";
 import { PWARegister } from "@/components/pwa-register";
 import { OfflineDownload } from "@/components/offline-download";
 import bookCover from "@/assets/book.png";
@@ -190,7 +191,7 @@ function App() {
                 <a href={it.url} target="_blank" rel="noopener" className="text-[var(--orange)] font-bold">OPEN ↗</a>
               </div>
               {"embed" in it && (it as any).embed ? (
-                <iframe src={(it as any).embed} className="w-full block" style={{ height: 240, border: 0 }} loading="lazy" allowFullScreen />
+                <OfflineEmbed type={it.type} src={(it as any).embed} url={it.url} title={it.title} height={240} />
               ) : null}
               <div className="p-4">
                 <h4 className="font-black mb-1">{it.title}</h4>

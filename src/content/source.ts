@@ -148,14 +148,14 @@ export const SOURCE = {
   },
   listen: {
     label: "WATCH · LISTEN · BROWSE",
-    headline: "The book in other formats.",
+    headline: "Briefly about the book:",
     lede: "Slide deck, scientific record, podcast walkthrough, video.",
     items: [
       { type: "SlideShare", title: "The visual blueprint", desc: "Fifteen-slide diagnostic deck.", url: "https://www.slideshare.net/slideshow/the-nvidia-innovator-s-dilemma-ai-factories-the-compute-empire-and-the-disruption-that-comes-from-below/287288356", embed: "https://www.slideshare.net/slideshow/embed_code/key/GEWReCAME1O6uM" },
       { type: "Figshare", title: "Citable scholarly record", desc: "DOI 10.6084/m9.figshare.32133316", url: "https://figshare.com/articles/book/The_Nvidia_Innovator_s_Dilemma/32133316", embed: "https://widgets.figshare.com/articles/32133316/embed?show_title=1" },
       { type: "YouTube", title: "Short explainer video", desc: "Watch on YouTube.", url: "https://youtu.be/6w0B6gKvybI", embed: "https://www.youtube.com/embed/6w0B6gKvybI" },
-      { type: "Spotify", title: "Podcast walkthrough", desc: "Listen on Spotify.", url: "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H" },
-      { type: "Apple Podcasts", title: "Podcast walkthrough", desc: "Listen on Apple Podcasts.", url: "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324" },
+      { type: "Spotify", title: "Podcast walkthrough", desc: "Listen on Spotify.", url: "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H", embed: "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H" },
+      { type: "Apple Podcasts", title: "Podcast walkthrough", desc: "Listen on Apple Podcasts.", url: "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324", embed: "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324" },
     ],
   },
   qa: {

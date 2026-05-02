@@ -23,6 +23,7 @@ async function precacheAll(onProgress: (pct: number) => void) {
   const embeds = [
     "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H",
     "https://www.youtube.com/embed/6w0B6gKvybI",
+    "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324",
   ];
 
   const urls = [...staticAssets, ...translations, ...embeds];
