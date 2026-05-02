@@ -1,9 +1,13 @@
+import { useEffect, useRef } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useI18n } from "@/content/i18n";
 import { GlitchText } from "@/components/glitch";
 import { LangSwitcher } from "@/components/lang-switcher";
 import { QASection } from "@/components/qa";
 import { Quiz } from "@/components/quiz";
+import { SwipeDeck } from "@/components/swipe-deck";
+import { NoiseCanvas } from "@/components/noise-canvas";
+import { PWARegister } from "@/components/pwa-register";
 import bookCover from "@/assets/book.png";
 import logoMark from "@/assets/logo.png";
 
