@@ -7,6 +7,7 @@ import { QASection } from "@/components/qa";
 import { Quiz } from "@/components/quiz";
 import { SwipeDeck } from "@/components/swipe-deck";
 import { NoiseCanvas } from "@/components/noise-canvas";
+import { OfflineEmbed } from "@/components/offline-embed";
 import { PWARegister } from "@/components/pwa-register";
 import { OfflineDownload } from "@/components/offline-download";
 import bookCover from "@/assets/book.png";
