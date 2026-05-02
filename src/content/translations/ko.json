@@ -1,0 +1,743 @@
+{
+  "meta": {
+    "title": "NVIDIA 혁신가의 딜레마",
+    "subtitle": "AI 팩토리, 컴퓨팅 제국, 그리고 아래로부터의 파괴적 혁신.",
+    "author": "SLAVA SOLODKIY",
+    "classification": "[CLASSIFICATION: 공개]",
+    "rev": "TE_MANUAL.1.5 // 전략",
+    "by": "저자",
+    "published": "출판일",
+    "publishedValue": "2026년 4월",
+    "pages": "페이지",
+    "pagesValue": "114",
+    "format": "형식",
+    "formatValue": "페이퍼백 · 전자책",
+    "topic": "주제",
+    "topicValue": "5조 달러의 구조적 함정"
+  },
+  "nav": {
+    "book": "도서",
+    "qa": "Q&A",
+    "quiz": "퀴즈",
+    "listen": "듣기",
+    "buy": "구매",
+    "language": "언어",
+    "next": "다음",
+    "back": "뒤로",
+    "skip": "건너뛰기",
+    "retry": "다시 시도",
+    "continue": "계속",
+    "finish": "완료"
+  },
+  "hero": {
+    "cta1": "Amazon에서 구매하기",
+    "cta2": "모든 서점",
+    "cta3": "Spotify에서 듣기",
+    "cta4": "Q&A 읽기",
+    "install": "앱 설치"
+  },
+  "thesis": {
+    "label": "주요 내용 · 두 가지 시각",
+    "headline": "NVIDIA는 탁월함에도 불구하고 문제가 있는 것이 아니라, 탁월함 때문에 문제가 있다.",
+    "lede": "같은 내용을 두 가지 방식으로 표현했습니다. 원하는 어조를 선택하세요. 스와이프 →",
+    "officialLabel": "// 공식 개요",
+    "officialTitle": "5조 달러의 함정.",
+    "officialBody": [
+      "5조 달러의 가치와 75%의 매출 총 이익률을 가진 NVIDIA는 칩을 판매하는 것이 아니라 전 세계 AI 경제에 끊임없는 세금을 부과하고 있습니다. 난공불락처럼 보이는 제국은 사실 교과서적인 구조적 함정입니다.",
+      "세 가지 힘이 기반을 허물고 있습니다: 하이퍼스케일러들의 맞춤형 ASIC(Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA)으로의 이탈; 프리미엄 학습에서 비용 효율을 중시하는 추론으로의 워크로드 전환; 그리고 CUDA 누출 — OpenAI Triton과 vLLM에 의해 우회되는 독점적 잠금.",
+      "생존을 위해 Jensen Huang은 상상할 수 없는 일을 해야 합니다: 자율적인 사업부를 분사하고, 자신의 75% 마진을 잠식하며, 월스트리트의 분노를 감수하면서 미래의 보이지 않는 시장을 점유해야 합니다."
+    ],
+    "ironicLabel": "// 자기 비하적 반개요",
+    "ironicTitle": "이 책을 읽지 마세요.",
+    "ironicBody": [
+      "실제 성공을 찬양하는 비즈니스 서적에 질리셨나요? 하루에 7억 5천만 달러를 버는 것이 실제로 치명적인 질병이라는 걱정에 식은땀을 흘리며 잠에서 깨시나요? 그렇지 않다면, 이 책을 내려놓고 떠나세요.",
+      "저자는 NVIDIA가 자율 사업부를 분사하여 십대들의 유휴 RTX 4090 GPU를 임대하는 시장(DePIN)을 독점하고, 웨스트버지니아의 폐쇄된 석탄 발전소를 매입하며, 온두라스의 암호화폐-자유지상주의 차터 시티에 인프라를 판매해야 한다고 진지하게 제안합니다.",
+      "그리고 코다에서는 이 모든 것이 중요하지 않다고 선언합니다. 왜냐하면 2050년까지 실리콘은 아담과 이브라는 로봇 과학자들이 배양통에서 만든 초고밀도 고기 컴퓨터로 대체될 것이기 때문입니다."
+    ]
+  },
+  "cracks": {
+    "label": "파괴적 혁신 벡터 · 5가지 비대칭 위협",
+    "headline": "5조 달러 요새의 다섯 가지 균열.",
+    "lede": "어느 것도 단일 경쟁자가 아닙니다. 모두 75% 마진에 대한 구조적 대응입니다.",
+    "items": [
+      {
+        "id": "CRACK_01",
+        "title": "하이퍼스케일러 이탈",
+        "body": "NVIDIA의 75% 매출 총 이익률은 세금으로 기능합니다. Google TPU v7, AWS Trainium 3, Microsoft Maia 200, Meta MTIA는 5년 로드맵에 걸쳐 약 1,200억 달러에 달하는 NVIDIA의 구조적 매출을 위험에 빠뜨립니다.",
+        "stat": "연간 1,010억 달러 · 마진세"
+      },
+      {
+        "id": "CRACK_02",
+        "title": "학습 → 추론 변곡점",
+        "body": "AI 컴퓨팅 사이클의 3분의 2는 이제 추론입니다. NVIDIA의 40,000달러, 1,000와트 GPU는 과도하게 설계되었습니다. Groq, Etched, Cerebras는 볼륨 레이어를 장악합니다.",
+        "stat": "사이클의 2/3 · 추론"
+      },
+      {
+        "id": "CRACK_03",
+        "title": "CUDA 누출",
+        "body": "OpenAI Triton, vLLM, MLIR — 범용 추상화 계층은 CUDA 해자를 우회합니다. 2026년 4월 DeepSeek 순간은 다음과 같이 확인했습니다: 해자가 무너지는 것이 아니라 우회되고 있습니다.",
+        "stat": "Triton · vLLM · MLIR"
+      },
+      {
+        "id": "CRACK_04",
+        "title": "성능 과잉 공급",
+        "body": "고전적인 Christensen 조건. NVIDIA는 프리미엄 최전선 학습 마진을 쫓아 상위 시장으로 올라가고, 그 아래에서 볼륨 추론 시장은 상품화됩니다.",
+        "stat": "\"충분히 좋은\" 것이 승리"
+      },
+      {
+        "id": "CRACK_05",
+        "title": "고객 집중",
+        "body": "2026 회계연도 2분기 총 매출의 39%가 두 고객에게서 나왔습니다. 구매자들은 깊은 실리콘 재능과 마진세를 벗어나고자 하는 동기를 가진 준국가 행위자들입니다.",
+        "stat": "39% / 2개 고객"
+      }
+    ]
+  },
+  "pillars": {
+    "label": "다섯 가지 기둥 · 미래가 건설되는 곳",
+    "headline": "다섯 가지 새로운 가치 네트워크. 모두 5조 달러의 P&L에 의해 무시됩니다.",
+    "lede": "Christensen은 이들을 \"비소비 시장\"이라고 불렀습니다. 오늘날에는 중요하지 않을 정도로 작지만, 2030년까지 이들은 다음 시대의 인프라 경제를 구성할 것입니다.",
+    "items": [
+      {
+        "badge": "PILLAR I",
+        "title": "DePIN — AI를 위한 에어비앤비",
+        "body": "클라우드 비용의 30-50%에 불과한 통합된 프로슈머 GPU (Akash, io.net, Render, Bittensor). 컴퓨팅의 롱테일, NVIDIA 가격 책정 권력으로부터 구조적으로 보호됨."
+      },
+      {
+        "badge": "PILLAR II",
+        "title": "갈색지대 에너지 차익거래",
+        "body": "용도 변경된 석탄 발전소, 제련소, 폐기된 산업 단지. FLOPS당 달러가 아닌, 전력 공급까지 걸리는 시간이 2020년대 후반의 구속 조건입니다."
+      },
+      {
+        "badge": "PILLAR III",
+        "title": "국가 AI 및 준국가",
+        "body": "국가 (인도, 사우디, UAE, 일본) 및 네트워크 국가, 헌장 도시, 특별 경제 구역의 신흥 집단."
+      },
+      {
+        "badge": "PILLAR IV",
+        "title": "에이전트를 위한 디지털 신원",
+        "body": "에이전트 경제를 위한 실리콘 수준의 증명 및 DID/VC 인프라. 2030년까지 — 자율 에이전트를 위한 비자. 오늘날 — 0달러."
+      },
+      {
+        "badge": "PILLAR V",
+        "title": "미활용 인적 자본",
+        "body": "재진입 근로자, 전환기 참전 용사, 실직한 산업 근로자, 노숙자, 자발적인 교도소 시범 프로그램. Christensen의 시장 창출 혁신을 정직하게 적용한 것."
+      }
+    ]
+  },
+  "buy": {
+    "label": "도서 구매",
+    "headline": "페이퍼백 및 전자책이 전 세계적으로 판매됩니다.",
+    "lede": "11개 서점. 가장 가까운 곳을 선택하세요.",
+    "stores": [
+      {
+        "name": "Amazon US",
+        "region": "미국 · 페이퍼백 & 킨들",
+        "url": "https://amzn.to/4udiaQi"
+      },
+      {
+        "name": "Amazon UK",
+        "region": "영국 · 페이퍼백 & 킨들",
+        "url": "https://amzn.to/4unQMzi"
+      },
+      {
+        "name": "eBay UK",
+        "region": "영국 · 페이퍼백",
+        "url": "https://www.ebay.co.uk/itm/377152805299"
+      },
+      {
+        "name": "Apple Books",
+        "region": "전 세계 · 전자책",
+        "url": "https://books.apple.com/us/book/the-nvidia-innovators-dilemma/id6765670316"
+      },
+      {
+        "name": "Barnes & Noble",
+        "region": "미국 · 누크 & 페이퍼백",
+        "url": "https://www.barnesandnoble.com/w/the-nvidia-innovators-dilemma-slava-solodkiy/1150068107"
+      },
+      {
+        "name": "Kobo",
+        "region": "전 세계 · 전자책",
+        "url": "https://www.kobo.com/gb/en/ebook/the-nvidia-innovator-s-dilemma"
+      },
+      {
+        "name": "Everand",
+        "region": "전 세계 · 구독",
+        "url": "https://www.everand.com/book/1033632193/The-Nvidia-Innovator-s-Dilemma"
+      },
+      {
+        "name": "Bookshop.org",
+        "region": "독립 서점",
+        "url": "https://bookshop.org/p/books/the-nvidia-innovator-s-dilemma-slava-solodkiy/9c14452f225f0706"
+      },
+      {
+        "name": "Thalia",
+        "region": "독일 · DE",
+        "url": "https://www.thalia.de/shop/home/artikeldetails/A1079613287"
+      },
+      {
+        "name": "Smashwords",
+        "region": "전 세계 · 전자책",
+        "url": "https://www.smashwords.com/books/view/2022379"
+      },
+      {
+        "name": "Books2Read",
+        "region": "범용 링크 · 모든 서점",
+        "url": "https://books2read.com/u/meWRNg"
+      }
+    ]
+  },
+  "listen": {
+    "label": "시청 · 청취 · 탐색",
+    "headline": "다른 형식으로 된 책.",
+    "lede": "슬라이드 자료, 학술 기록, 팟캐스트 워크스루, 비디오.",
+    "items": [
+      {
+        "type": "SlideShare",
+        "title": "시각적 청사진",
+        "desc": "15장 진단 데크.",
+        "url": "https://www.slideshare.net/slideshow/the-nvidia-innovator-s-dilemma-ai-factories-the-compute-empire-and-the-disruption-that-comes-from-below/287288356",
+        "embed": "https://www.slideshare.net/slideshow/embed_code/key/GEWReCAME1O6uM"
+      },
+      {
+        "type": "Figshare",
+        "title": "인용 가능한 학술 기록",
+        "desc": "DOI 10.6084/m9.figshare.32133316",
+        "url": "https://figshare.com/articles/book/The_Nvidia_Innovator_s_Dilemma/32133316",
+        "embed": "https://widgets.figshare.com/articles/32133316/embed?show_title=1"
+      },
+      {
+        "type": "YouTube",
+        "title": "짧은 설명 비디오",
+        "desc": "YouTube에서 시청하세요.",
+        "url": "https://youtu.be/6w0B6gKvybI",
+        "embed": "https://www.youtube.com/embed/6w0B6gKvybI"
+      },
+      {
+        "type": "Spotify",
+        "title": "팟캐스트 워크스루",
+        "desc": "Spotify에서 들으세요.",
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+      },
+      {
+        "type": "Apple Podcasts",
+        "title": "팟캐스트 워크스루",
+        "desc": "Apple Podcasts에서 들으세요.",
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+      }
+    ]
+  },
+  "qa": {
+    "label": "Q&A · 학습 가이드",
+    "headline": "해부된 책.",
+    "lede": "검색, 필터링, 탭하여 확장. 그리고 퀴즈로 자신을 테스트하세요.",
+    "searchPlaceholder": "질문 검색…",
+    "testMe": "이것으로 테스트하기 →",
+    "items": [
+      {
+        "chapter": "CRACK_01",
+        "q": "\"NVIDIA 세금\"이란 무엇이며, 이것이 하이퍼스케일러의 행동에 어떻게 영향을 미칩니까?",
+        "a": "'세금'은 NVIDIA의 약 75%의 매출 총 이익률을 의미하며, 하이퍼스케일러들은 이를 자신들의 자본 지출이 NVIDIA의 이익으로 불합리하게 이전되는 것으로 간주합니다. 이것은 Google, Amazon, Microsoft가 수십억 달러에 달하는 연간 절감 효과를 얻기 위해 내부 맞춤형 ASIC(TPU, Trainium, Maia)를 개발하도록 하는 막대한 재정적 동기를 부여합니다."
+      },
+      {
+        "chapter": "CRACK_02",
+        "q": "2023년과 2026년 사이에 AI 컴퓨팅에서 주요 '수행할 작업'은 어떻게 변화했습니까?",
+        "a": "2023년까지는 최전선 모델 학습이 지배적인 작업이었으며, NVIDIA가 독보적인 고정밀 병렬 성능을 요구했습니다. 2026년까지 워크로드는 토큰당 비용, 결정론적 지연 시간, 저정밀 연산을 보상하는 추론으로 전환되었습니다. 이는 NVIDIA의 프리미엄 칩이 과도하게 설계된 영역입니다."
+      },
+      {
+        "chapter": "CRACK_04",
+        "q": "NVIDIA Blackwell B200 GPU와 관련하여 '성능 과잉 공급'을 정의하시오.",
+        "a": "이는 제품이 대다수의 고객이 사용하거나 지불할 수 있는 것보다 더 많은 성능을 제공할 때 발생합니다. 2026년의 많은 표준 추론 워크로드에서 40,000달러짜리 Blackwell B200은 과도하게 준비되어 있어, '충분히 좋은' 모듈식 칩 또는 특수 ASIC가 비용과 효율성 면에서 승리할 수 있게 합니다."
+      },
+      {
+        "chapter": "CRACK_03",
+        "q": "2026년 4월의 'DeepSeek 순간'은 무엇이었으며, 왜 중요했습니까?",
+        "a": "DeepSeek은 Huawei Ascend 실리콘에서 처음부터 끝까지 학습된 V4-Flash를 출시했으며, V4-Pro는 Ascend 추론에 최적화되었습니다. 이는 CUDA 해자가 우회될 수 있음을 증명했습니다. 즉, 학습에는 NVIDIA를 사용하고 배포에는 대체 주권 하드웨어를 사용하는 것입니다."
+      },
+      {
+        "chapter": "CRACK_03",
+        "q": "모듈식 소프트웨어 우회에서 OpenAI Triton과 vLLM의 역할을 설명하십시오.",
+        "a": "Triton과 vLLM은 개발자가 NVIDIA, AMD 또는 맞춤형 ASIC에서 거의 기본 효율성으로 실행되는 고성능 코드를 작성할 수 있도록 하는 하드웨어 불가지론적 추상화 계층입니다. 이들은 잠금 장치를 소프트웨어 생태계에서 단지 칩별 성능으로 옮김으로써 CUDA 해자의 전략적 가치를 약화시킵니다."
+      },
+      {
+        "chapter": "CRACK_01",
+        "q": "저자는 왜 NVIDIA의 75% 매출 총 이익률을 '황금 수갑'이라고 묘사합니까?",
+        "a": "이러한 마진은 NVIDIA가 고마진 프로젝트에만 우선순위를 두도록 강제하여, 저마진, 고볼륨 '충분히 좋은' 시장을 추구할 수 없게 만듭니다. 저마진 부문으로 이동하려는 모든 시도는 고마진 유지를 기반으로 가격이 책정된 NVIDIA의 5조 달러 시가총액을 위협할 것입니다."
+      },
+      {
+        "chapter": "PILLAR_II",
+        "q": "'브라운필드 에너지'란 무엇이며, 왜 전략적 병목 현상이 되었습니까?",
+        "a": "브라운필드는 그리드 상호 연결 및 냉각 인프라를 이미 갖춘 폐기되었거나 부분적으로 폐기된 산업 단지(석탄 발전소, 제련소)를 의미합니다. AI의 병목 현상은 더 이상 칩이 아니라 '전력 공급까지 걸리는 시간'이며, 신규 상호 연결 대기열은 최대 15년까지 늘어나기 때문에 전략적입니다."
+      },
+      {
+        "chapter": "PILLAR_I",
+        "q": "DePIN은 'AI를 위한 에어비앤비'로서 어떻게 작동합니까?",
+        "a": "DePIN은 수백만 개의 유휴 프로슈머 및 소비자 GPU를 오케스트레이션 계층을 통해 통합 추론 네트워크로 집계합니다. 이는 게임과 같은 다른 용도로 이미 상각된 하드웨어를 활용하여 기존 클라우드 비용의 30-50%로 컴퓨팅 용량을 제공합니다."
+      },
+      {
+        "chapter": "PILLAR_III",
+        "q": "'메타스테이트'란 무엇이며, 왜 '비소비' 고객으로 간주됩니까?",
+        "a": "메타스테이트는 주권적 권한을 가지고 운영되는 신흥 디지털 우선 관할 구역, 네트워크 국가 및 특별 경제 구역(Próspera, NEOM)입니다. 이들은 주요 하이퍼스케일러가 서비스를 제공하기에는 너무 작거나 정치적으로 비표준이기 때문에 '비소비'로 간주되어 모듈식 주권 AI 인프라를 위한 기회를 창출합니다."
+      },
+      {
+        "chapter": "REMEDY",
+        "q": "Christensen에 따르면, 파괴적 혁신에 직면한 기존 기업을 위한 유일한 구조적 해결책은 무엇입다?",
+        "a": "자체 P&L, (마진보다는 채택과 같은) 별도의 지표, 다른 물리적 위치, 그리고 모회사의 핵심 KPI를 무시할 수 있는 명시적인 허가를 가진 자율 사업부를 분사하는 것입니다. 이를 통해 새로운 사업부는 주류 조직이 그렇지 않으면 고사시킬 저마진, 어색한 시장을 추구할 수 있습니다."
+      },
+      {
+        "chapter": "PILLAR_V",
+        "q": "저자는 왜 AI 노동을 위해 미활용 인적 자본을 사용할 것을 제안합니까?",
+        "a": "AI 연구소는 고품질 인간 피드백 노동(RLHF)에 50억~100억 달러의 부족에 직면해 있습니다. 재진입 근로자, 참전 용사, 실직한 산업 근로자, 노숙자는 전문 주석가로 훈련될 수 있으며, AI 주석을 공식 노동 시장으로 재진입하기 위한 인증 메커니즘으로 사용합니다."
+      },
+      {
+        "chapter": "CODA",
+        "q": "코다에서 설명하는 '탈실리콘 지평'이란 무엇입니까?",
+        "a": "DNA와 생물학적 컴퓨팅. DNA는 실리콘보다 그램당 약 9배 더 많은 비트를 저장할 수 있으며, 생물학적 컴퓨팅은 2~3배 더 에너지 효율적입니다. '아담'과 '이브'와 같은 로봇 과학자 프로젝트는 생물학이 AI의 궁극적인 기질임을 시사합니다."
+      }
+    ]
+  },
+  "quiz": {
+    "label": "퀴즈 · 챕터 레벨",
+    "headline": "딜레마를 해독하세요.",
+    "lede": "균열과 기둥당 한 레벨. 다섯 가지 질문. 모두 통과하여 배지를 잠금 해제하세요.",
+    "correct": "정답",
+    "wrong": "오답",
+    "score": "점수",
+    "youScored": "당신은 점수를 얻었습니다",
+    "of": "중",
+    "badgeUnlocked": "배지 잠금 해제",
+    "locked": "잠김",
+    "completed": "완료됨",
+    "start": "레벨 시작",
+    "levels": [
+      {
+        "id": "CRACK_01",
+        "title": "하이퍼스케일러 이탈",
+        "badge": "세금 회피자",
+        "questions": [
+          {
+            "q": "'NVIDIA 세금'이 의미하는 대략적인 총 매출 이익률은?",
+            "options": [
+              "25%",
+              "50%",
+              "75%",
+              "90%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "다음 중 하이퍼스케일러 ASIC이 아닌 것은?",
+            "options": [
+              "Google TPU",
+              "AWS Trainium",
+              "Microsoft Maia",
+              "Apple M5"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "2026년 2분기 NVIDIA 매출의 몇 퍼센트가 단 두 고객으로부터 발생했습니까?",
+            "options": [
+              "12%",
+              "25%",
+              "39%",
+              "60%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "하이퍼스케일러가 자체 실리콘을 제작하는 주요 재정적 동기는 무엇입니까?",
+            "options": [
+              "더 나은 지연 시간",
+              "NVIDIA의 이익 마진 확보",
+              "더 작은 칩 공간",
+              "정부 명령"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "하이퍼스케일러 이탈로 인해 5년간 위험에 처할 NVIDIA의 연간 매출은 대략 얼마입니까?",
+            "options": [
+              "50억 달러",
+              "300억 달러",
+              "1,200억 달러",
+              "4,000억 달러"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "CRACK_02",
+        "title": "학습 → 추론 변곡점",
+        "badge": "추론 기반",
+        "questions": [
+          {
+            "q": "현재 AI 컴퓨팅 사이클의 몇 분의 1이 추론입니까?",
+            "options": [
+              "1/4",
+              "1/3",
+              "1/2",
+              "2/3"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "NVIDIA Blackwell B200 GPU의 대략적인 가격은?",
+            "options": [
+              "4,000달러",
+              "10,000달러",
+              "40,000달러",
+              "120,000달러"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "다음 중 온칩 SRAM과 데이터플로우 아키텍처를 사용하여 초저지연 추론을 수행하는 스타트업은?",
+            "options": [
+              "Cerebras",
+              "Groq",
+              "Etched",
+              "Tenstorrent"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Etched의 Sohu는 무엇을 전문으로 하는 ASIC입니까?",
+            "options": [
+              "확산 모델",
+              "트랜스포머",
+              "강화 학습",
+              "그래프 신경망"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "추론은 다음 속성 중 어떤 것을 보상합니까?",
+            "options": [
+              "FP32 정밀도",
+              "오류 허용 오차",
+              "토큰당 비용",
+              "매우 큰 배치 크기만"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "CRACK_03",
+        "title": "CUDA 누출",
+        "badge": "해자 우회자",
+        "questions": [
+          {
+            "q": "어떤 OpenAI 프로젝트가 하드웨어 불가지론적 커널 언어를 제공합니까?",
+            "options": [
+              "DALL-E",
+              "Triton",
+              "Whisper",
+              "Codex"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "vLLM은 다음 중 무엇으로 가장 잘 설명됩니까?",
+            "options": [
+              "새로운 GPU",
+              "오픈소스 LLM 서비스 프레임워크",
+              "CUDA 대체 칩",
+              "클라우드 제공업체"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "MLIR은 때때로 무엇이라고 불립니까?",
+            "options": [
+              "AI용 JVM",
+              "AI용 LLVM",
+              "AI용 Docker",
+              "AI용 React"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "DeepSeek은 2026년 4월에 V4-Flash 모델을 어떤 실리콘으로 훈련했습니까?",
+            "options": [
+              "NVIDIA H100",
+              "AMD MI300",
+              "Huawei Ascend",
+              "Google TPU"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "NVIDIA의 CUDA 생태계에는 대략 몇 명의 개발자가 있습니까?",
+            "options": [
+              "6만",
+              "60만",
+              "6백만",
+              "6천만"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_I",
+        "title": "DePIN — AI를 위한 에어비앤비",
+        "badge": "롱테일 운영자",
+        "questions": [
+          {
+            "q": "다음 중 DePIN 컴퓨팅 네트워크는?",
+            "options": [
+              "Akash",
+              "Stripe",
+              "Snowflake",
+              "Datadog"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "DePIN은 일반적으로 클라우드 비용의 몇 %로 컴퓨팅을 제공합니까?",
+            "options": [
+              "80–100%",
+              "60–80%",
+              "30–50%",
+              "5–10%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "2026년 DePIN의 대표적인 소비자 GPU 공급 장치는?",
+            "options": [
+              "GTX 1080",
+              "RTX 4090",
+              "Tesla V100",
+              "M1 Ultra"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Bittensor의 DePIN에 대한 주요 기여는?",
+            "options": [
+              "새로운 GPU",
+              "분산 AI를 위한 인센티브 계층",
+              "클라우드 데이터센터",
+              "CUDA 분기"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "DePIN이 NVIDIA 가격 책정 권력으로부터 구조적으로 보호되는 이유는 무엇입니까?",
+            "options": [
+              "정부 보조금",
+              "하드웨어가 다른 용도로 이미 상각됨",
+              "독점적 CUDA 라이선스",
+              "더 저렴한 전기만"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_II",
+        "title": "갈색지대 에너지 차익거래",
+        "badge": "전력 공급까지 걸리는 시간",
+        "questions": [
+          {
+            "q": "신규 그리드 상호 연결 대기열은 이제 최대 얼마까지 늘어납니까?",
+            "options": [
+              "6개월",
+              "2년",
+              "7–15년",
+              "50년"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "FLOPS당 달러를 대체하는 새로운 전략적 지표는 무엇입니까?",
+            "options": [
+              "전력 공급까지 걸리는 시간",
+              "시장 출시 시간",
+              "실리콘까지 걸리는 시간",
+              "IPO까지 걸리는 시간"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "'브라운필드' 사이트는 일반적으로 무엇을 의미합니까?",
+            "options": [
+              "신규의 빈 필드",
+              "기존 그리드를 갖춘 폐쇄된 산업 부지",
+              "태양광 발전소",
+              "해상 풍력"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "다음 중 전형적인 브라운필드 후보는?",
+            "options": [
+              "쇼핑몰",
+              "폐쇄된 석탄 발전소",
+              "이미 사용 중인 데이터센터",
+              "주거 지역"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "브라운필드 사이트가 신규 사이트에 비해 매력적인 이유는 무엇입니까?",
+            "options": [
+              "더 저렴한 토지뿐",
+              "기존 그리드 + 냉각 + 허가",
+              "더 많은 일조량",
+              "공항에 더 가깝기 때문"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_III",
+        "title": "국가 AI 및 준국가",
+        "badge": "주권 스택",
+        "questions": [
+          {
+            "q": "다음 중 '준국가'의 예시는?",
+            "options": [
+              "캘리포니아",
+              "Próspera",
+              "도쿄",
+              "EU"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "준국가가 하이퍼스케일러에게 '비소비'인 이유는?",
+            "options": [
+              "인터넷 없음",
+              "너무 작거나 정치적으로 비표준",
+              "AI 금지",
+              "사용 가능한 GPU 없음"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "다음 중 주권 AI 구매자로 언급되지 않은 국가는?",
+            "options": [
+              "인도",
+              "사우디아라비아",
+              "일본",
+              "아이슬란드"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "무엇이 전 세계적으로 하드웨어 이질성을 추진합니까?",
+            "options": [
+              "유행",
+              "지정학적 정렬",
+              "칩 색상",
+              "환율"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "NEOM은 무엇을 예시합니까?",
+            "options": [
+              "DePIN 프로토콜",
+              "네트워크 국가/헌장 도시 프로젝트",
+              "NVIDIA 제품",
+              "미국 주"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "REMEDY",
+        "title": "크리스텐센 처방",
+        "badge": "자율 사업부",
+        "questions": [
+          {
+            "q": "'자율 사업부 플레이북'은 몇 가지 요구 사항을 명시합니까?",
+            "options": [
+              "3",
+              "5",
+              "7",
+              "10"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "자율 사업부는 누구에게 직접 보고해야 합니까?",
+            "options": [
+              "CFO",
+              "Jensen Huang",
+              "이사회",
+              "PR팀"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "자율 사업부는 무엇으로 평가되어야 합니까?",
+            "options": [
+              "매출 총 이익률",
+              "ASP",
+              "채택 및 생태계 성장",
+              "언론 보도"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "플레이북에서 권장하는 인내심 기간은?",
+            "options": [
+              "6-12개월",
+              "2-3년",
+              "4-7년",
+              "20년 이상"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "사업부가 산타클라라와 물리적으로 분리되어야 하는 이유는 무엇입니까?",
+            "options": [
+              "더 저렴한 임대료",
+              "문화적 경직성 방지",
+              "더 좋은 날씨",
+              "세금 문제"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "label": "자주 묻는 질문",
+    "headline": "자주 묻는 질문.",
+    "items": [
+      {
+        "q": "NVIDIA는 정말로 파멸할까요?",
+        "a": "저자는 NVIDIA의 몰락에 대해 25-35%의 확신을 가집니다. 이 책은 구조적 위험에 대한 '운영적 부검'이지, 주가 예측이 아닙니다."
+      },
+      {
+        "q": "왜 '딜레마'라고 부릅니까?",
+        "a": "현재 비즈니스를 훌륭하게 관리하는 것이 바로 파괴적 혁신의 메커니즘이기 때문입니다. NVIDIA는 기존 방식을 개선하는 것으로는 이 딜레마를 해결할 수 없습니다."
+      },
+      {
+        "q": "이 책은 NVIDIA 반대 책입니까?",
+        "a": "아닙니다. Jensen Huang의 실적을 존중하며, 그가 이 딜레마를 두 번이나 극복했음을 명시적으로 언급합니다."
+      },
+      {
+        "q": "'준국가'란 무엇입니까?",
+        "a": "주권적 권한을 가지고 운영되는 신흥 디지털 우선 관할 구역, 네트워크 국가 또는 헌장 도시 — Próspera, NEOM 등."
+      },
+      {
+        "q": "어디서부터 시작해야 합니까?",
+        "a": "15장 슬라이드셰어 데크를 읽으세요. 그 다음 이 Q&A를 읽으세요. 그 다음 책을 읽으세요."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "모든 권리 보유.",
+    "colophon": "크림, 잉크, 오렌지, 라임으로 제작되었습니다. 편집증에 의해 지원됩니다."
+  }
+}
