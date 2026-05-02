@@ -5,10 +5,13 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { VitePWA } from "vite-plugin-pwa";
+// @ts-expect-error - JS plugin without types
+import { cssGuardPlugin } from "./vite/css-guard-plugin.mjs";
 
 export default defineConfig({
   vite: {
     plugins: [
+      cssGuardPlugin(),
       VitePWA({
         registerType: "prompt",
         injectRegister: false,
