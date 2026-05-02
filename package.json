@@ -9,6 +9,7 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
+    "lint:css": "node scripts/lint-css.mjs src/styles.css src",
     "format": "prettier --write ."
   },
   "dependencies": {
