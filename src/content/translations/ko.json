@@ -221,13 +221,15 @@
         "type": "Spotify",
         "title": "팟캐스트 워크스루",
         "desc": "Spotify에서 들으세요.",
-        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H",
+        "embed": "https://open.spotify.com/embed/episode/624jFRaxTMb5D5Qe67rO3H"
       },
       {
         "type": "Apple Podcasts",
         "title": "팟캐스트 워크스루",
         "desc": "Apple Podcasts에서 들으세요.",
-        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324",
+        "embed": "https://embed.podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
       }
     ]
   },
