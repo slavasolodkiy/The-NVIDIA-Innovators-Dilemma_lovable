@@ -28,9 +28,8 @@ export function PWARegister() {
         const { registerSW } = await import("virtual:pwa-register");
         const update = registerSW({
           onNeedRefresh() { if (!cancelled) setNeedRefresh(true); },
-          onRegistered(r) {
-            // Check for new SW every 60 minutes
-            r && setInterval(() => r.update().catch(() => {}), 60 * 60 * 1000);
+          onRegistered(r: ServiceWorkerRegistration | undefined) {
+            if (r) setInterval(() => r.update().catch(() => {}), 60 * 60 * 1000);
           },
         });
         setUpdateSW(() => update);
