@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { createContext, useContext, useEffect, useState, useCallback, type ReactNode } from "react";
 import { LANGUAGES, type LanguageCode } from "./languages";
 import { SOURCE, type SourceContent } from "./source";
 
@@ -39,7 +39,16 @@ function detect(): LanguageCode {
   return (found?.code as LanguageCode) ?? "en";
 }
 
-export function useI18n() {
+type I18nContextValue = {
+  lang: LanguageCode;
+  setLang: (next: LanguageCode) => void;
+  t: SourceContent;
+  languages: typeof LANGUAGES;
+};
+
+const I18nContext = createContext<I18nContextValue | null>(null);
+
+export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<LanguageCode>("en");
 
   useEffect(() => { setLang(detect()); }, []);
@@ -53,7 +62,16 @@ export function useI18n() {
     if (typeof window !== "undefined") localStorage.setItem(STORAGE_KEY, next);
   }, []);
 
-  // Always fall back to English source if a key is missing in a translation.
   const t = DICTS[lang] ?? SOURCE;
-  return { lang, setLang: change, t, languages: LANGUAGES };
+  return (
+    <I18nContext.Provider value={{ lang, setLang: change, t, languages: LANGUAGES }}>
+      {children}
+    </I18nContext.Provider>
+  );
+}
+
+export function useI18n() {
+  const ctx = useContext(I18nContext);
+  if (!ctx) throw new Error("useI18n must be used within I18nProvider");
+  return ctx;
 }
