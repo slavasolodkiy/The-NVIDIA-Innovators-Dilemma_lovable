@@ -148,7 +148,7 @@ export const SOURCE = {
   },
   listen: {
     label: "WATCH · LISTEN · BROWSE",
-    headline: "The book in other formats.",
+    headline: "Briefly about the book:",
     lede: "Slide deck, scientific record, podcast walkthrough, video.",
     items: [
       { type: "SlideShare", title: "The visual blueprint", desc: "Fifteen-slide diagnostic deck.", url: "https://www.slideshare.net/slideshow/the-nvidia-innovator-s-dilemma-ai-factories-the-compute-empire-and-the-disruption-that-comes-from-below/287288356", embed: "https://www.slideshare.net/slideshow/embed_code/key/GEWReCAME1O6uM" },
