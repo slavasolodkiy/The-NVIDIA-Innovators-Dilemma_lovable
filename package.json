@@ -9,6 +9,7 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
+    "verify:publish": "npm run lint && npm run build",
     "lint:css": "node scripts/lint-css.mjs src/styles.css src",
     "format": "prettier --write ."
   },
