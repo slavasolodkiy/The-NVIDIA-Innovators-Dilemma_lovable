@@ -142,6 +142,7 @@ export const SOURCE = {
       { name: "Bookshop.org", region: "Independent bookstores", url: "https://bookshop.org/p/books/the-nvidia-innovator-s-dilemma-slava-solodkiy/9c14452f225f0706" },
       { name: "Thalia", region: "Germany · DE", url: "https://www.thalia.de/shop/home/artikeldetails/A1079613287" },
       { name: "Smashwords", region: "Worldwide · eBook", url: "https://www.smashwords.com/books/view/2022379" },
+      { name: "Fable", region: "Worldwide · eBook & Book Club", url: "https://fable.co/book/x-9798235142671" },
       { name: "Books2Read", region: "Universal link · all stores", url: "https://books2read.com/u/meWRNg" },
     ],
   },
