@@ -18,29 +18,29 @@ function ensureDescriptionConst(source) {
     return source;
   }
 
-  const anchor = 'import appCss from "../styles.css?url";\n\n';
-  if (!source.includes(anchor)) {
+  const anchorRegex = /import appCss from "\.\.\/styles\.css\?url";\r?\n\r?\n/;
+  if (!anchorRegex.test(source)) {
     return source;
   }
 
-  return source.replace(anchor, `${anchor}${SITE_DESCRIPTION_DECL}`);
+  return source.replace(anchorRegex, (match) => `${match}${SITE_DESCRIPTION_DECL}`);
 }
 
 function normalizeDescriptionMeta(source) {
   let out = source;
 
   out = out.replace(
-    /\{ name: "description", content: [\s\S]*?\},\n\s*\{ name: "author", content: "Lovable" \},/m,
+    /\{ name: "description", content: [\s\S]*?\},\r?\n\s*\{ name: "author", content: "Lovable" \},/m,
     '{ name: "description", content: SITE_DESCRIPTION },\n      { name: "author", content: "Lovable" },',
   );
 
   out = out.replace(
-    /\{ property: "og:description", content: [\s\S]*?\},\n\s*\{ property: "og:type", content: "website" \},/m,
+    /\{ property: "og:description", content: [\s\S]*?\},\r?\n\s*\{ property: "og:type", content: "website" \},/m,
     '{ property: "og:description", content: SITE_DESCRIPTION },\n      { property: "og:type", content: "website" },',
   );
 
   out = out.replace(
-    /\{ name: "twitter:description", content: [\s\S]*?\},\n\s*\{ property: "og:image", content: /m,
+    /\{ name: "twitter:description", content: [\s\S]*?\},\r?\n\s*\{ property: "og:image", content: /m,
     '{ name: "twitter:description", content: SITE_DESCRIPTION },\n      { property: "og:image", content: ',
   );
 
