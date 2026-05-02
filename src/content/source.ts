@@ -1,0 +1,486 @@
+// English source of truth — all translatable strings live here.
+// Translations live in src/content/translations/{lang}.json (auto-generated).
+
+export const SOURCE = {
+  meta: {
+    title: "The NVIDIA Innovator's Dilemma",
+    subtitle: "AI FACTORIES, THE COMPUTE EMPIRE, AND THE DISRUPTION FROM BELOW.",
+    author: "SLAVA SOLODKIY",
+    classification: "[CLASSIFICATION: PUBLIC]",
+    rev: "TE_MANUAL.1.5 // STRATEGIC",
+    by: "BY",
+    published: "Published",
+    publishedValue: "APR 2026",
+    pages: "Pages",
+    pagesValue: "114",
+    format: "Format",
+    formatValue: "Paperback · eBook",
+    topic: "Topic",
+    topicValue: "$5T STRUCTURAL TRAP",
+  },
+  nav: {
+    book: "BOOK",
+    qa: "Q&A",
+    quiz: "QUIZ",
+    listen: "LISTEN",
+    buy: "BUY",
+    language: "LANG",
+    next: "NEXT",
+    back: "BACK",
+    skip: "SKIP",
+    retry: "RETRY",
+    continue: "CONTINUE",
+    finish: "FINISH",
+  },
+  hero: {
+    cta1: "Buy on Amazon",
+    cta2: "All stores",
+    cta3: "Listen on Spotify",
+    cta4: "Read the Q&A",
+    install: "Install App",
+  },
+  thesis: {
+    label: "THE THESIS · TWO READINGS",
+    headline: "NVIDIA is not in trouble despite its excellence. It is in trouble because of it.",
+    lede: "Two ways of saying the same thing. Choose your tone. Swipe →",
+    officialLabel: "// OFFICIAL OVERVIEW",
+    officialTitle: "The $5 Trillion Trap.",
+    officialBody: [
+      "At a $5 trillion valuation with a 75% gross margin, NVIDIA isn't selling chips — it is levying a relentless tax on the global AI economy. What looks like an impenetrable empire is actually a textbook structural trap.",
+      "Three forces are tearing through the foundation: hyperscaler defection to custom ASICs (Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA); the workload shift from premium training to cost-obsessed inference; and the CUDA leak — proprietary lock-in routed around by OpenAI Triton and vLLM.",
+      "To survive, Jensen Huang must do the unthinkable: spin out autonomous units, cannibalize his own 75% margins, and risk Wall Street's wrath to capture the invisible markets of tomorrow.",
+    ],
+    ironicLabel: "// SELF-IRONIC ANTI-OVERVIEW",
+    ironicTitle: "DO NOT READ THIS BOOK.",
+    ironicBody: [
+      "Are you tired of business books that celebrate actual success? Do you wake up in a cold sweat worrying that making $750 million a day is actually a terminal disease? If not, please put this book down and walk away.",
+      "The author seriously proposes that NVIDIA spin out autonomous units to corner the market on renting out teenagers' idle RTX 4090 GPUs (DePIN), buy decommissioned coal plants in West Virginia, and sell infrastructure to crypto-libertarian charter cities in Honduras.",
+      "And then a Coda declares that none of this matters, because by 2050 silicon will be replaced by hyper-dense meat computers brewed in vats by robot scientists named Adam and Eve.",
+    ],
+  },
+  cracks: {
+    label: "DISRUPTION VECTORS · FIVE ASYMMETRIC THREATS",
+    headline: "Five cracks in the $5T fortress.",
+    lede: "None is a single competitor. All are structural responses to the 75% margin.",
+    items: [
+      {
+        id: "CRACK_01",
+        title: "The Hyperscaler Defection",
+        body: "NVIDIA's 75% gross margin functions as a tax. Google TPU v7, AWS Trainium 3, Microsoft Maia 200, and Meta MTIA represent ~$120B of structural NVIDIA revenue at risk over a five-year roadmap.",
+        stat: "$101B / yr · margin tax",
+      },
+      {
+        id: "CRACK_02",
+        title: "Training → Inference Inflection",
+        body: "Two-thirds of AI compute cycles are now inference. NVIDIA's $40,000, 1,000-watt GPUs are wildly over-engineered. Groq, Etched, Cerebras eat the volume layer.",
+        stat: "2/3 of cycles · inference",
+      },
+      {
+        id: "CRACK_03",
+        title: "The CUDA Leak",
+        body: "OpenAI Triton, vLLM, MLIR — universal abstraction layers route around the CUDA moat. The DeepSeek moment of April 2026 confirmed: the moat is not breaking, it is being bypassed.",
+        stat: "Triton · vLLM · MLIR",
+      },
+      {
+        id: "CRACK_04",
+        title: "Performance Overshoot",
+        body: "The classic Christensen condition. NVIDIA climbs up-market chasing premium frontier-training margin while the volume inference market commoditizes underneath.",
+        stat: "\"good enough\" wins",
+      },
+      {
+        id: "CRACK_05",
+        title: "Customer Concentration",
+        body: "Two customers accounted for 39% of total revenue in Q2 FY2026. The buyers are quasi-sovereign actors with deep silicon talent and motive to escape the margin tax.",
+        stat: "39% / 2 customers",
+      },
+    ],
+  },
+  pillars: {
+    label: "THE FIVE PILLARS · WHERE TOMORROW IS BUILT",
+    headline: "Five new value networks. All ignored by the $5T P&L.",
+    lede: "Christensen called them \"non-consuming markets.\" Today they are too small to matter. By 2030 they constitute the next era's infrastructure economy.",
+    items: [
+      {
+        badge: "PILLAR I",
+        title: "DePIN — Airbnb for AI",
+        body: "Aggregated prosumer GPUs (Akash, io.net, Render, Bittensor) at 30–50% of cloud cost. Long tail of compute, structurally protected from NVIDIA pricing power.",
+      },
+      {
+        badge: "PILLAR II",
+        title: "Brownfield Energy Arbitrage",
+        body: "Repurposed coal plants, smelters, decommissioned industrial sites. Time-to-power, not FLOPS-per-dollar, is the binding constraint of the late 2020s.",
+      },
+      {
+        badge: "PILLAR III",
+        title: "Sovereign AI & Metastates",
+        body: "Nation-states (India, Saudi, UAE, Japan) and the emerging cohort of network states, chartered cities, and special economic zones.",
+      },
+      {
+        badge: "PILLAR IV",
+        title: "Digital Identity for Agents",
+        body: "Silicon-level attestation and DID/VC infrastructure for the agent economy. By 2030 — Visa for autonomous agents. Today — zero billion dollars.",
+      },
+      {
+        badge: "PILLAR V",
+        title: "Untapped Human Capital",
+        body: "Re-entry workers, transitioning veterans, displaced industrial labor, the unhoused, voluntary prison-pilot programs. Christensen's market-creating innovation, applied honestly.",
+      },
+    ],
+  },
+  buy: {
+    label: "BUY THE BOOK",
+    headline: "Paperback and eBook available globally.",
+    lede: "Eleven storefronts. Pick your nearest.",
+    stores: [
+      { name: "Amazon US", region: "United States · Paperback & Kindle", url: "https://amzn.to/4udiaQi" },
+      { name: "Amazon UK", region: "United Kingdom · Paperback & Kindle", url: "https://amzn.to/4unQMzi" },
+      { name: "eBay UK", region: "United Kingdom · Paperback", url: "https://www.ebay.co.uk/itm/377152805299" },
+      { name: "Apple Books", region: "Worldwide · eBook", url: "https://books.apple.com/us/book/the-nvidia-innovators-dilemma/id6765670316" },
+      { name: "Barnes & Noble", region: "USA · Nook & Paperback", url: "https://www.barnesandnoble.com/w/the-nvidia-innovators-dilemma-slava-solodkiy/1150068107" },
+      { name: "Kobo", region: "Worldwide · eBook", url: "https://www.kobo.com/gb/en/ebook/the-nvidia-innovator-s-dilemma" },
+      { name: "Everand", region: "Worldwide · Subscription", url: "https://www.everand.com/book/1033632193/The-Nvidia-Innovator-s-Dilemma" },
+      { name: "Bookshop.org", region: "Independent bookstores", url: "https://bookshop.org/p/books/the-nvidia-innovator-s-dilemma-slava-solodkiy/9c14452f225f0706" },
+      { name: "Thalia", region: "Germany · DE", url: "https://www.thalia.de/shop/home/artikeldetails/A1079613287" },
+      { name: "Smashwords", region: "Worldwide · eBook", url: "https://www.smashwords.com/books/view/2022379" },
+      { name: "Books2Read", region: "Universal link · all stores", url: "https://books2read.com/u/meWRNg" },
+    ],
+  },
+  listen: {
+    label: "WATCH · LISTEN · BROWSE",
+    headline: "The book in other formats.",
+    lede: "Slide deck, scientific record, podcast walkthrough, video.",
+    items: [
+      { type: "SlideShare", title: "The visual blueprint", desc: "Fifteen-slide diagnostic deck.", url: "https://www.slideshare.net/slideshow/the-nvidia-innovator-s-dilemma-ai-factories-the-compute-empire-and-the-disruption-that-comes-from-below/287288356", embed: "https://www.slideshare.net/slideshow/embed_code/key/GEWReCAME1O6uM" },
+      { type: "Figshare", title: "Citable scholarly record", desc: "DOI 10.6084/m9.figshare.32133316", url: "https://figshare.com/articles/book/The_Nvidia_Innovator_s_Dilemma/32133316", embed: "https://widgets.figshare.com/articles/32133316/embed?show_title=1" },
+      { type: "YouTube", title: "Short explainer video", desc: "Watch on YouTube.", url: "https://youtu.be/6w0B6gKvybI", embed: "https://www.youtube.com/embed/6w0B6gKvybI" },
+      { type: "Spotify", title: "Podcast walkthrough", desc: "Listen on Spotify.", url: "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H" },
+      { type: "Apple Podcasts", title: "Podcast walkthrough", desc: "Listen on Apple Podcasts.", url: "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324" },
+    ],
+  },
+  qa: {
+    label: "Q&A · STUDY GUIDE",
+    headline: "The book, dissected.",
+    lede: "Search, filter, and tap to expand. Then test yourself in the quiz.",
+    searchPlaceholder: "Search questions…",
+    testMe: "Test me on this →",
+    items: [
+      {
+        chapter: "CRACK_01",
+        q: "What is the \"NVIDIA Tax\" and how does it drive hyperscaler behavior?",
+        a: "The 'tax' refers to NVIDIA's ~75% gross margins, which hyperscalers view as an unsustainable transfer of their capex into NVIDIA's profit. This provides a massive fiduciary incentive for Google, Amazon, and Microsoft to develop internal custom ASICs (TPU, Trainium, Maia) to capture multi-billion-dollar annual savings.",
+      },
+      {
+        chapter: "CRACK_02",
+        q: "How has the primary 'job to be done' in AI compute shifted between 2023 and 2026?",
+        a: "Through 2023 the dominant job was frontier-model training, requiring high-precision parallel performance where NVIDIA was unbeatable. By 2026 the workload shifted to inference, which rewards cost per token, deterministic latency, and low-precision arithmetic — areas where NVIDIA's premium chips are over-engineered.",
+      },
+      {
+        chapter: "CRACK_04",
+        q: "Define 'Performance Overshoot' as it relates to NVIDIA's Blackwell B200 GPU.",
+        a: "It occurs when a product delivers more performance than the majority of customers can use or pay for. For many standard inference workloads in 2026, the $40,000 Blackwell B200 is over-provisioned, allowing 'good enough' modular chips or specialized ASICs to win on cost and efficiency.",
+      },
+      {
+        chapter: "CRACK_03",
+        q: "What was the 'DeepSeek moment' of April 2026, and why was it significant?",
+        a: "DeepSeek released V4-Flash trained end-to-end on Huawei Ascend silicon, while V4-Pro was optimized for Ascend inference. This proved that the CUDA moat could be routed around — using NVIDIA for training but deploying on alternative sovereign hardware for inference.",
+      },
+      {
+        chapter: "CRACK_03",
+        q: "Explain the role of OpenAI Triton and vLLM in the modular software bypass.",
+        a: "Triton and vLLM are hardware-agnostic abstraction layers that let developers write high-performance code that runs on NVIDIA, AMD, or custom ASICs with near-native efficiency. They decay the strategic value of the CUDA moat by moving lock-in from the software ecosystem to mere per-chip performance.",
+      },
+      {
+        chapter: "CRACK_01",
+        q: "Why does the author describe NVIDIA's 75% gross margins as 'golden handcuffs'?",
+        a: "These margins force NVIDIA to prioritize only high-margin projects, making it structurally incapable of pursuing low-margin, high-volume 'good enough' markets. Any move into lower-margin segments would threaten NVIDIA's $5T market cap, which is priced on the maintenance of those high margins.",
+      },
+      {
+        chapter: "PILLAR_II",
+        q: "What is 'Brownfield Energy' and why has it become a strategic bottleneck?",
+        a: "Brownfield refers to retired or partially retired industrial sites (coal plants, smelters) that already possess grid interconnections and cooling infrastructure. They are strategic because the bottleneck for AI is no longer chips but 'time to power' — greenfield interconnection queues stretch up to 15 years.",
+      },
+      {
+        chapter: "PILLAR_I",
+        q: "How does DePIN function as the 'Airbnb for AI'?",
+        a: "DePIN aggregates millions of idle prosumer and consumer GPUs into a unified inference network via an orchestration layer. It offers compute capacity at 30–50% of the cost of traditional clouds by utilizing hardware already amortized for other uses like gaming.",
+      },
+      {
+        chapter: "PILLAR_III",
+        q: "What are 'Metastates' and why are they considered 'non-consuming' customers?",
+        a: "Metastates are emerging digital-first jurisdictions, network states, and special economic zones (Próspera, NEOM) that operate with sovereign authority. They are 'non-consuming' because they are too small or politically non-standard for major hyperscalers to serve — creating an opening for modular sovereign AI infrastructure.",
+      },
+      {
+        chapter: "REMEDY",
+        q: "According to Christensen, what is the only structural remedy for an incumbent facing disruption?",
+        a: "Spin out autonomous units with their own P&Ls, separate metrics (adoption over margin), different physical locations, and explicit permission to ignore the parent company's core KPIs. This lets new units pursue the low-margin, awkward markets that the main organization would otherwise starve.",
+      },
+      {
+        chapter: "PILLAR_V",
+        q: "Why does the author propose using untapped human capital for AI labor?",
+        a: "AI labs face a $5–10B shortage of high-quality human feedback labor (RLHF). Re-entry workers, veterans, displaced industrial workers, and the unhoused can be trained as expert annotators — using AI annotation as a credentialing mechanism back into the formal labor market.",
+      },
+      {
+        chapter: "CODA",
+        q: "What is the 'post-silicon horizon' described in the Coda?",
+        a: "DNA and biological computing. DNA can store ~9 orders of magnitude more bits per gram than silicon, and biological computation is 2–3 orders of magnitude more energy-efficient. Robot-scientist projects like 'Adam' and 'Eve' point to biology as the eventual substrate for AI.",
+      },
+    ],
+  },
+  quiz: {
+    label: "QUIZ · CHAPTER LEVELS",
+    headline: "Decode the dilemma.",
+    lede: "One level per crack and pillar. Five questions. Beat them all to unlock the badge.",
+    correct: "CORRECT",
+    wrong: "WRONG",
+    score: "SCORE",
+    youScored: "You scored",
+    of: "of",
+    badgeUnlocked: "BADGE UNLOCKED",
+    locked: "LOCKED",
+    completed: "COMPLETED",
+    start: "START LEVEL",
+    levels: [
+      {
+        id: "CRACK_01",
+        title: "The Hyperscaler Defection",
+        badge: "TAX EVADER",
+        questions: [
+          {
+            q: "What is the approximate gross margin that the 'NVIDIA Tax' refers to?",
+            options: ["25%", "50%", "75%", "90%"],
+            correct: 2,
+          },
+          {
+            q: "Which of these is NOT a hyperscaler ASIC?",
+            options: ["Google TPU", "AWS Trainium", "Microsoft Maia", "Apple M5"],
+            correct: 3,
+          },
+          {
+            q: "What % of NVIDIA Q2 FY2026 revenue came from just two customers?",
+            options: ["12%", "25%", "39%", "60%"],
+            correct: 2,
+          },
+          {
+            q: "What is the main fiduciary motive for hyperscalers to build their own silicon?",
+            options: ["Better latency", "Capture NVIDIA's profit margin", "Smaller chip footprint", "Government mandate"],
+            correct: 1,
+          },
+          {
+            q: "Roughly how much annual NVIDIA revenue is structurally at risk from hyperscaler defection over five years?",
+            options: ["$5B", "$30B", "$120B", "$400B"],
+            correct: 2,
+          },
+        ],
+      },
+      {
+        id: "CRACK_02",
+        title: "Training → Inference Inflection",
+        badge: "INFERENCE NATIVE",
+        questions: [
+          {
+            q: "What fraction of AI compute cycles is now inference?",
+            options: ["1/4", "1/3", "1/2", "2/3"],
+            correct: 3,
+          },
+          {
+            q: "Approximate price of an NVIDIA Blackwell B200 GPU?",
+            options: ["$4,000", "$10,000", "$40,000", "$120,000"],
+            correct: 2,
+          },
+          {
+            q: "Which startup uses on-chip SRAM and a dataflow architecture for ultra-low-latency inference?",
+            options: ["Cerebras", "Groq", "Etched", "Tenstorrent"],
+            correct: 1,
+          },
+          {
+            q: "Etched's Sohu is an ASIC specialized for what?",
+            options: ["Diffusion models", "Transformers", "Reinforcement learning", "Graph neural networks"],
+            correct: 1,
+          },
+          {
+            q: "Inference rewards which of these properties?",
+            options: ["FP32 precision", "Failure tolerance", "Cost per token", "Gigantic batch sizes only"],
+            correct: 2,
+          },
+        ],
+      },
+      {
+        id: "CRACK_03",
+        title: "The CUDA Leak",
+        badge: "MOAT BYPASSER",
+        questions: [
+          {
+            q: "Which OpenAI project provides a hardware-agnostic kernel language?",
+            options: ["DALL-E", "Triton", "Whisper", "Codex"],
+            correct: 1,
+          },
+          {
+            q: "vLLM is best described as…",
+            options: ["A new GPU", "An open-source LLM serving framework", "A CUDA replacement chip", "A cloud provider"],
+            correct: 1,
+          },
+          {
+            q: "MLIR is sometimes called…",
+            options: ["JVM for AI", "LLVM for AI", "Docker for AI", "React for AI"],
+            correct: 1,
+          },
+          {
+            q: "On what silicon did DeepSeek train its V4-Flash model in April 2026?",
+            options: ["NVIDIA H100", "AMD MI300", "Huawei Ascend", "Google TPU"],
+            correct: 2,
+          },
+          {
+            q: "Roughly how many developers are in NVIDIA's CUDA ecosystem?",
+            options: ["60,000", "600,000", "6 million", "60 million"],
+            correct: 2,
+          },
+        ],
+      },
+      {
+        id: "PILLAR_I",
+        title: "DePIN — Airbnb for AI",
+        badge: "LONG-TAIL OPERATOR",
+        questions: [
+          {
+            q: "Which of these is a DePIN compute network?",
+            options: ["Akash", "Stripe", "Snowflake", "Datadog"],
+            correct: 0,
+          },
+          {
+            q: "DePIN typically delivers compute at what % of cloud cost?",
+            options: ["80–100%", "60–80%", "30–50%", "5–10%"],
+            correct: 2,
+          },
+          {
+            q: "Which consumer GPU is the canonical DePIN supply unit in 2026?",
+            options: ["GTX 1080", "RTX 4090", "Tesla V100", "M1 Ultra"],
+            correct: 1,
+          },
+          {
+            q: "Bittensor's primary contribution to DePIN is…",
+            options: ["A new GPU", "An incentive layer for distributed AI", "A cloud datacenter", "A CUDA fork"],
+            correct: 1,
+          },
+          {
+            q: "Why is DePIN structurally protected from NVIDIA pricing power?",
+            options: ["Government subsidies", "Hardware is already amortized for other uses", "Exclusive CUDA license", "Cheaper electricity only"],
+            correct: 1,
+          },
+        ],
+      },
+      {
+        id: "PILLAR_II",
+        title: "Brownfield Energy Arbitrage",
+        badge: "TIME-TO-POWER",
+        questions: [
+          {
+            q: "Greenfield grid interconnection queues now stretch up to…",
+            options: ["6 months", "2 years", "7–15 years", "50 years"],
+            correct: 2,
+          },
+          {
+            q: "What is the new strategic metric replacing FLOPS-per-dollar?",
+            options: ["Time to power", "Time to market", "Time to silicon", "Time to IPO"],
+            correct: 0,
+          },
+          {
+            q: "A 'brownfield' site typically means…",
+            options: ["A greenfield empty lot", "Retired industrial site with existing grid", "Solar farm", "Offshore wind"],
+            correct: 1,
+          },
+          {
+            q: "Which of these is a typical brownfield candidate?",
+            options: ["A shopping mall", "A decommissioned coal plant", "A data center already in use", "A residential zone"],
+            correct: 1,
+          },
+          {
+            q: "Why are brownfield sites attractive vs greenfield?",
+            options: ["Cheaper land only", "Existing grid + cooling + permits", "More sun exposure", "Closer to airports"],
+            correct: 1,
+          },
+        ],
+      },
+      {
+        id: "PILLAR_III",
+        title: "Sovereign AI & Metastates",
+        badge: "SOVEREIGN STACK",
+        questions: [
+          {
+            q: "Which is an example of a 'metastate'?",
+            options: ["California", "Próspera", "Tokyo", "EU"],
+            correct: 1,
+          },
+          {
+            q: "Why are metastates 'non-consuming' for hyperscalers?",
+            options: ["No internet", "Too small or politically non-standard", "Banned AI", "No GPUs available"],
+            correct: 1,
+          },
+          {
+            q: "Which nation-state is NOT mentioned as a sovereign AI buyer?",
+            options: ["India", "Saudi Arabia", "Japan", "Iceland"],
+            correct: 3,
+          },
+          {
+            q: "What pushes hardware heterogeneity globally?",
+            options: ["Fashion", "Geopolitical alignment", "Chip color", "Currency exchange"],
+            correct: 1,
+          },
+          {
+            q: "What does NEOM exemplify?",
+            options: ["A DePIN protocol", "A network state / chartered city project", "An NVIDIA product", "A US state"],
+            correct: 1,
+          },
+        ],
+      },
+      {
+        id: "REMEDY",
+        title: "The Christensen Prescription",
+        badge: "AUTONOMOUS UNIT",
+        questions: [
+          {
+            q: "How many requirements does the 'Autonomous Unit Playbook' specify?",
+            options: ["3", "5", "7", "10"],
+            correct: 2,
+          },
+          {
+            q: "An autonomous unit should report directly to…",
+            options: ["The CFO", "Jensen Huang", "The board", "The PR team"],
+            correct: 1,
+          },
+          {
+            q: "An autonomous unit should be judged on what?",
+            options: ["Gross margin", "ASP", "Adoption and ecosystem growth", "Press coverage"],
+            correct: 2,
+          },
+          {
+            q: "What patience horizon does the playbook recommend?",
+            options: ["6–12 months", "2–3 years", "4–7 years", "20+ years"],
+            correct: 2,
+          },
+          {
+            q: "Why must the unit be physically separate from Santa Clara?",
+            options: ["Cheaper rent", "Avoid cultural ossification", "Better weather", "Tax reasons"],
+            correct: 1,
+          },
+        ],
+      },
+    ],
+  },
+  faq: {
+    label: "FAQ",
+    headline: "Frequently asked.",
+    items: [
+      { q: "Is NVIDIA actually doomed?", a: "The author admits 25–35% confidence in NVIDIA's demise. The book is an 'operational autopsy' of structural risk, not a stock-price prediction." },
+      { q: "Why call it a 'dilemma'?", a: "Because excellent management of the current business is exactly the mechanism of disruption. NVIDIA cannot solve this by being better at what it already does." },
+      { q: "Is this an anti-NVIDIA book?", a: "No. It treats Jensen Huang's track record with respect and explicitly notes he has beaten the dilemma twice before." },
+      { q: "What's a 'metastate'?", a: "An emerging digital-first jurisdiction, network state, or chartered city operating with sovereign authority — Próspera, NEOM, etc." },
+      { q: "Where do I start?", a: "Read the 15-slide SlideShare deck. Then the Q&A here. Then the book." },
+    ],
+  },
+  footer: {
+    rights: "All rights reserved.",
+    colophon: "Made with cream, ink, orange and lime. Powered by paranoia.",
+  },
+} as const;
+
+export type SourceContent = typeof SOURCE;

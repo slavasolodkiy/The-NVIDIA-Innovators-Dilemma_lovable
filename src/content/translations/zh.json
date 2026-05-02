@@ -1,0 +1,743 @@
+{
+  "meta": {
+    "title": "NVIDIA创新者的困境",
+    "subtitle": "人工智能工厂、计算帝国以及自下而上的颠覆。",
+    "author": "SLAVA SOLODKIY",
+    "classification": "[CLASSIFICATION: PUBLIC]",
+    "rev": "TE_MANUAL.1.5 // STRATEGIC",
+    "by": "作者",
+    "published": "出版日期",
+    "publishedValue": "2026年4月",
+    "pages": "页数",
+    "pagesValue": "114",
+    "format": "格式",
+    "formatValue": "平装 · 电子书",
+    "topic": "主题",
+    "topicValue": "5万亿美元的结构性陷阱"
+  },
+  "nav": {
+    "book": "书籍",
+    "qa": "问答",
+    "quiz": "测试",
+    "listen": "收听",
+    "buy": "购买",
+    "language": "语言",
+    "next": "下一页",
+    "back": "返回",
+    "skip": "跳过",
+    "retry": "重试",
+    "continue": "继续",
+    "finish": "完成"
+  },
+  "hero": {
+    "cta1": "在Amazon购买",
+    "cta2": "所有商店",
+    "cta3": "在Spotify收听",
+    "cta4": "阅读问答",
+    "install": "安装应用"
+  },
+  "thesis": {
+    "label": "论点 · 两种解读",
+    "headline": "NVIDIA并未因其卓越而陷入困境。它正因其卓越而陷入困境。",
+    "lede": "两种说法道出了同一个道理。选择你的语调。滑动 →",
+    "officialLabel": "// 官方概述",
+    "officialTitle": "5万亿美元的陷阱。",
+    "officialBody": [
+      "NVIDIA估值5万亿美元，毛利率高达75%，它销售的不是芯片——它是在对全球AI经济征收无情的税。这看起来无懈可击的帝国，实际上是一个典型的结构性陷阱。",
+      ",有三种力量正在撕裂其基础：超大规模企业的叛逃转向定制ASIC（Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA）；工作负载从高端训练转向成本驱动的推理；以及CUDA的泄漏——专有锁定被OpenAI Triton和vLLM规避。",
+      ",为了生存，Jensen Huang必须做出不可思议的事情：剥离独立单元，蚕食自己75%的利润，并冒着华尔街的愤怒去抓住未来的无形市场。"
+    ],
+    "ironicLabel": "// 自嘲式反概述",
+    "ironicTitle": "请勿阅读本书。",
+    "ironicBody": [
+      "你是否厌倦了那些歌颂真正成功的商业书籍？你是否会在冷汗中醒来，担心每天赚7.5亿美元实际上是一种绝症？如果不是，请放下这本书走开。",
+      ",作者认真提议NVIDIA剥离独立单元，以垄断租赁青少年闲置RTX 4090 GPU（DePIN）的市场，购买西弗吉尼亚州退役的燃煤电厂，并向洪都拉斯的加密自由主义特许城市出售基础设施。",
+      ",最后，一份“结语”声明，所有这些都无关紧要，因为到2050年，硅将被机器人科学家Adam和Eve在罐中培育的超密集肉脑计算机取代。"
+    ]
+  },
+  "cracks": {
+    "label": "颠覆向量 · 五大不对称威胁",
+    "headline": "5万亿美元堡垒上的五道裂缝。",
+    "lede": "没有一个是单一的竞争对手。所有这些都是对75%利润率的结构性回应。",
+    "items": [
+      {
+        "id": "CRACK_01",
+        "title": "超大规模企业的叛逃",
+        "body": "NVIDIA 75%的毛利率相当于一种税收。Google TPU v7、AWS Trainium 3、Microsoft Maia 200和Meta MTIA在未来五年内面临约1200亿美元的结构性NVIDIA收入风险。",
+        "stat": "每年1010亿美元 · 利润税"
+      },
+      {
+        "id": "CRACK_02",
+        "title": "训练 → 推理的转变",
+        "body": "目前三分之二的AI计算周期用于推理。NVIDIA价值4万美元、功耗1000瓦的GPU被严重过度设计。Groq、Etched、Cerebras瓜分了批量市场。",
+        "stat": "2/3周期 · 推理"
+      },
+      {
+        "id": "CRACK_03",
+        "title": "CUDA泄漏",
+        "body": "OpenAI Triton、vLLM、MLIR——通用抽象层绕过了CUDA护城河。2026年4月的DeepSeek时刻证实：护城河并未被打破，而是被绕过了。",
+        "stat": "Triton · vLLM · MLIR"
+      },
+      {
+        "id": "CRACK_04",
+        "title": "性能过剩",
+        "body": "经典的Christensen条件。NVIDIA追逐高端前沿训练利润，而大众推理市场在底层被商品化。",
+        "stat": "“足够好”即可获胜"
+      },
+      {
+        "id": "CRACK_05",
+        "title": "客户集中度",
+        "body": "2026财年第二季度，两家客户贡献了总收入的39%。这些买家是准主权参与者，拥有深厚的硅人才和摆脱利润税的动机。",
+        "stat": "39% / 2家客户"
+      }
+    ]
+  },
+  "pillars": {
+    "label": "五大支柱 · 未来在哪里建造",
+    "headline": "五个新的价值网络。都被5万亿美元的损益表所忽视。",
+    "lede": "Christensen称它们为“非消费市场”。今天它们微不足道。到2030年，它们将构成下一个时代的基建经济。",
+    "items": [
+      {
+        "badge": "PILLAR I",
+        "title": "DePIN — AI界的Airbnb",
+        "body": "聚合的专业消费者GPU（Akash、io.net、Render、Bittensor）成本为云的30-50%。长尾计算，在结构上免受NVIDIA定价权影响。"
+      },
+      {
+        "badge": "PILLAR II",
+        "title": "棕地能源套利",
+        "body": "重新利用的燃煤电厂、冶炼厂、退役工业场地。供电时间而非每美元FLOPS，是2020年代末的制约因素。"
+      },
+      {
+        "badge": "PILLAR III",
+        "title": "主权AI与元国家",
+        "body": "民族国家（印度、沙特、阿联酋、日本）以及新兴的网络国家、特许城市和经济特区。"
+      },
+      {
+        "badge": "PILLAR IV",
+        "title": "代理人的数字身份",
+        "body": "代理经济的硅级认证和DID/VC基础设施。到2030年——代理人的Visa。今天——零亿美元。"
+      },
+      {
+        "badge": "PILLAR V",
+        "title": "未开发的人力资本",
+        "body": "重新就业人员、退伍军人、失业产业工人、无家可归者、自愿参与监狱试点计划。Christensen的市场创造创新，真实应用。"
+      }
+    ]
+  },
+  "buy": {
+    "label": "购买本书",
+    "headline": "平装本和电子书全球发行。",
+    "lede": "十一家书店。选择离您最近的。",
+    "stores": [
+      {
+        "name": "Amazon US",
+        "region": "美国 · 平装本和Kindle电子书",
+        "url": "https://amzn.to/4udiaQi"
+      },
+      {
+        "name": "Amazon UK",
+        "region": "英国 · 平装本和Kindle电子书",
+        "url": "https://amzn.to/4unQMzi"
+      },
+      {
+        "name": "eBay UK",
+        "region": "英国 · 平装本",
+        "url": "https://www.ebay.co.uk/itm/377152805299"
+      },
+      {
+        "name": "Apple Books",
+        "region": "全球 · 电子书",
+        "url": "https://books.apple.com/us/book/the-nvidia-innovators-dilemma/id6765670316"
+      },
+      {
+        "name": "Barnes & Noble",
+        "region": "美国 · Nook电子书和平装本",
+        "url": "https://www.barnesandnoble.com/w/the-nvidia-innovators-dilemma-slava-solodkiy/1150068107"
+      },
+      {
+        "name": "Kobo",
+        "region": "全球 · 电子书",
+        "url": "https://www.kobo.com/gb/en/ebook/the-nvidia-innovator-s-dilemma"
+      },
+      {
+        "name": "Everand",
+        "region": "全球 · 订阅",
+        "url": "https://www.everand.com/book/1033632193/The-Nvidia-Innovator-s-Dilemma"
+      },
+      {
+        "name": "Bookshop.org",
+        "region": "独立书店",
+        "url": "https://bookshop.org/p/books/the-nvidia-innovator-s-dilemma-slava-solodkiy/9c14452f225f0706"
+      },
+      {
+        "name": "Thalia",
+        "region": "德国 · 德语",
+        "url": "https://www.thalia.de/shop/home/artikeldetails/A1079613287"
+      },
+      {
+        "name": "Smashwords",
+        "region": "全球 · 电子书",
+        "url": "https://www.smashwords.com/books/view/2022379"
+      },
+      {
+        "name": "Books2Read",
+        "region": "通用链接 · 所有商店",
+        "url": "https://books2read.com/u/meWRNg"
+      }
+    ]
+  },
+  "listen": {
+    "label": "观看 · 收听 · 浏览",
+    "headline": "其他形式的书籍。",
+    "lede": "幻灯片演示，科学记录，播客导读，视频。",
+    "items": [
+      {
+        "type": "SlideShare",
+        "title": "视觉蓝图",
+        "desc": "十五页诊断性幻灯片。",
+        "url": "https://www.slideshare.net/slideshow/the-nvidia-innovator-s-dilemma-ai-factories-the-compute-empire-and-the-disruption-that-comes-from-below/287288356",
+        "embed": "https://www.slideshare.net/slideshow/embed_code/key/GEWReCAME1O6uM"
+      },
+      {
+        "type": "Figshare",
+        "title": "可引用的学术记录",
+        "desc": "DOI 10.6084/m9.figshare.32133316",
+        "url": "https://figshare.com/articles/book/The_Nvidia_Innovator_s_Dilemma/32133316",
+        "embed": "https://widgets.figshare.com/articles/32133316/embed?show_title=1"
+      },
+      {
+        "type": "YouTube",
+        "title": "短视频讲解",
+        "desc": "在YouTube观看。",
+        "url": "https://youtu.be/6w0B6gKvybI",
+        "embed": "https://www.youtube.com/embed/6w0B6gKvybI"
+      },
+      {
+        "type": "Spotify",
+        "title": "播客导读",
+        "desc": "在Spotify收听。",
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+      },
+      {
+        "type": "Apple Podcasts",
+        "title": "播客导读",
+        "desc": "在Apple Podcasts收听。",
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+      }
+    ]
+  },
+  "qa": {
+    "label": "问答 · 学习指南",
+    "headline": "拆解本书。",
+    "lede": "搜索、筛选、点击展开。然后参加测验。",
+    "searchPlaceholder": "搜索问题…",
+    "testMe": "测试我 →",
+    "items": [
+      {
+        "chapter": "CRACK_01",
+        "q": "什么是“NVIDIA税”，它是如何推动超大规模企业行为的？",
+        "a": "“税”指的是NVIDIA约75%的毛利率，超大规模企业认为这是对其资本支出向NVIDIA利润的不持续转移。这为Google、Amazon和Microsoft开发内部定制ASIC（TPU、Trainium、Maia）提供了巨大的信托激励，以实现每年数十亿美元的节省。"
+      },
+      {
+        "chapter": "CRACK_02",
+        "q": "2023年至2026年期间，AI计算的主要“待完成工作”发生了怎样的变化？",
+        "a": "到2023年，主导工作是前沿模型训练，需要高精度并行性能，NVIDIA在这方面无人能及。到2026年，工作负载转向推理，这奖励每Token成本、确定性延迟和低精度算术——NVIDIA的高端芯片在这些领域被过度设计了。"
+      },
+      {
+        "chapter": "CRACK_04",
+        "q": "定义“性能过剩”及其与NVIDIA Blackwell B200 GPU的关系。",
+        "a": "当产品提供的性能超出大多数客户的需求或支付能力时，就会发生这种情况。对于2026年的许多标准推理工作负载，价值4万美元的Blackwell B200配置过高，这使得“足够好”的模块化芯片或专用ASIC能够在成本和效率方面取胜。"
+      },
+      {
+        "chapter": "CRACK_03",
+        "q": "2026年4月的“DeepSeek时刻”是什么，为什么它意义重大？",
+        "a": "DeepSeek发布了在华为Ascend芯片上端到端训练的V4-Flash，而V4-Pro则针对Ascend推理进行了优化。这证明CUDA护城河可以被绕过——使用NVIDIA进行训练，但部署在替代的主权硬件上进行推理。"
+      },
+      {
+        "chapter": "CRACK_03",
+        "q": "解释OpenAI Triton和vLLM在模块化软件绕过中的作用。",
+        "a": "Triton和vLLM是与硬件无关的抽象层，它允许开发人员编写高性能代码，以接近原生效率的方式在NVIDIA、AMD或定制ASIC上运行。它们通过将锁定从软件生态系统转移到单纯的芯片性能，从而削弱了CUDA护城河的战略价值。"
+      },
+      {
+        "chapter": "CRACK_01",
+        "q": "为什么作者将NVIDIA 75%的毛利率描述为“黄金手铐”？",
+        "a": "这些利润迫使NVIDIA只优先考虑高利润项目，使其在结构上无法追求低利润、高销量的“足够好”市场。任何进入低利润领域的举动都将威胁NVIDIA 5万亿美元的市值，而该市值是基于维持这些高利润而定价的。"
+      },
+      {
+        "chapter": "PILLAR_II",
+        "q": "什么是“棕地能源”，为什么它已成为战略瓶颈？",
+        "a": "棕地指的是退役或部分退役的工业场地（燃煤电厂、冶炼厂），它们已经拥有电网互联和冷却基础设施。它们具有战略意义，因为AI的瓶颈不再是芯片，而是“供电时间”——新建互联电网的排队时间长达15年。"
+      },
+      {
+        "chapter": "PILLAR_I",
+        "q": "DePIN如何作为“AI的Airbnb”运作？",
+        "a": "DePIN通过协调层将数百万闲置的专业消费者和消费级GPU聚合到一个统一的推理网络中。通过利用已为游戏等其他用途摊销的硬件，它以传统云成本的30-50%提供计算能力。"
+      },
+      {
+        "chapter": "PILLAR_III",
+        "q": "什么是“元国家”，为什么它们被认为是“非消费”客户？",
+        "a": "元国家是新兴的数字优先管辖区、网络国家和经济特区（Próspera、NEOM），它们拥有主权权力。它们之所以“非消费”，是因为它们规模太小或政治上不规范，无法由主要超大规模企业提供服务——这为主权AI模块化基础设施创造了机会。"
+      },
+      {
+        "chapter": "REMEDY",
+        "q": "根据Christensen的说法，现有企业在面临颠覆时唯一的结构性补救措施是什么？",
+        "a": "剥离拥有自己损益表、独立指标（以采用率而非利润率为准）、不同物理位置且明确允许忽略母公司核心KPI的自主单位。这使得新单位能够追求主流组织会扼杀的低利润、不方便的市场。"
+      },
+      {
+        "chapter": "PILLAR_V",
+        "q": "为什么作者建议利用未开发的人力资本进行AI劳动？",
+        "a": "AI实验室面临着5-100亿美元的高质量人工反馈劳动（RLHF）短缺。重新就业人员、退伍军人、失业产业工人以及无家可归者可以被培训成为专业的标注员——利用AI标注作为重新进入正规劳动力市场的凭证机制。"
+      },
+      {
+        "chapter": "CODA",
+        "q": "结局中描述的“后硅时代”是什么？",
+        "a": "DNA和生物计算。DNA每克可以存储比硅多约9个数量级的比特，生物计算的能效比硅高2-3个数量级。像“亚当”和“夏娃”这样的机器人科学家项目表明，生物学最终将成为AI的基础。"
+      }
+    ]
+  },
+  "quiz": {
+    "label": "测验 · 章级别",
+    "headline": "解开这个困境。",
+    "lede": "每个裂缝和支柱一个级别。五个问题。全部通过即可解锁徽章。",
+    "correct": "正确",
+    "wrong": "错误",
+    "score": "得分",
+    "youScored": "您的得分",
+    "of": "共",
+    "badgeUnlocked": "徽章已解锁",
+    "locked": "已锁定",
+    "completed": "已完成",
+    "start": "开始等级",
+    "levels": [
+      {
+        "id": "CRACK_01",
+        "title": "超大规模企业的叛逃",
+        "badge": "偷税者",
+        "questions": [
+          {
+            "q": "“NVIDIA税”指的是大约多少的毛利率？",
+            "options": [
+              "25%",
+              "50%",
+              "75%",
+              "90%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "以下哪项不是超大规模企业的ASIC？",
+            "options": [
+              "Google TPU",
+              "AWS Trainium",
+              "Microsoft Maia",
+              "Apple M5"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "NVIDIA 2026财年第二季度有多少%的收入来自仅有的两家客户？",
+            "options": [
+              "12%",
+              "25%",
+              "39%",
+              "60%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "超大规模企业自行开发芯片的主要财务动机是什么？",
+            "options": [
+              "更低的延迟",
+              "获取NVIDIA的利润",
+              "更小的芯片面积",
+              "政府命令"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "五年内，因超大规模企业叛逃，NVIDIA每年大约有多少营收面临结构性风险？",
+            "options": [
+              "50亿美元",
+              "300亿美元",
+              "1200亿美元",
+              "4000亿美元"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "CRACK_02",
+        "title": "训练 → 推理的转变",
+        "badge": "推理原生",
+        "questions": [
+          {
+            "q": "现在AI计算周期的多少比例用于推理？",
+            "options": [
+              "1/4",
+              "1/3",
+              "1/2",
+              "2/3"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "NVIDIA Blackwell B200 GPU的大致价格是多少？",
+            "options": [
+              "4,000美元",
+              "10,000美元",
+              "40,000美元",
+              "120,000美元"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "哪家初创公司利用片上SRAM和数据流架构实现超低延迟推理？",
+            "options": [
+              "Cerebras",
+              "Groq",
+              "Etched",
+              "Tenstorrent"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Etched的Sohu是一种专门用于什么领域的ASIC？",
+            "options": [
+              "扩散模型",
+              "Transformer",
+              "强化学习",
+              "图神经网络"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "推理奖励以下哪些特性？",
+            "options": [
+              "FP32精度",
+              "容错能力",
+              "每令牌成本",
+              "仅限巨型批次大小"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "CRACK_03",
+        "title": "CUDA泄漏",
+        "badge": "护城河绕行者",
+        "questions": [
+          {
+            "q": "OpenAI的哪个项目提供与硬件无关的内核语言？",
+            "options": [
+              "DALL-E",
+              "Triton",
+              "Whisper",
+              "Codex"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "vLLM最恰当的描述是…",
+            "options": [
+              "一种新型GPU",
+              "一种开源的LLM服务框架",
+              "CUDA替代芯片",
+              "一家云服务提供商"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "MLIR有时被称为什么？",
+            "options": [
+              "AI的JVM",
+              "AI的LLVM",
+              "AI的Docker",
+              "AI的React"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "DeepSeek在2026年4月用什么芯片训练了其V4-Flash模型？",
+            "options": [
+              "NVIDIA H100",
+              "AMD MI300",
+              "华为Ascend",
+              "Google TPU"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "NVIDIA CUDA生态系统中有多少开发者？",
+            "options": [
+              "60,000",
+              "600,000",
+              "600万",
+              "6000万"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_I",
+        "title": "DePIN — AI界的Airbnb",
+        "badge": "长尾运营者",
+        "questions": [
+          {
+            "q": "以下哪个是DePIN计算网络？",
+            "options": [
+              "Akash",
+              "Stripe",
+              "Snowflake",
+              "Datadog"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "DePIN通常以云服务成本的多少比例提供计算？",
+            "options": [
+              "80–100%",
+              "60–80%",
+              "30–50%",
+              "5–10%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "2026年哪款消费级GPU是DePIN的典型供应单元？",
+            "options": [
+              "GTX 1080",
+              "RTX 4090",
+              "Tesla V100",
+              "M1 Ultra"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Bittensor对DePIN的主要贡献是什么？",
+            "options": [
+              "一款新GPU",
+              "分布式AI的激励层",
+              "一个云数据中心",
+              "CUDA的分支"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "为什么DePIN在结构上不受NVIDIA定价权的影响？",
+            "options": [
+              "政府补贴",
+              "硬件已用于其他用途而摊销",
+              "独家CUDA许可证",
+              "仅限于更便宜的电力"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_II",
+        "title": "棕地能源套利",
+        "badge": "供电时间",
+        "questions": [
+          {
+            "q": "新建电网互连的排队时间现在延长至…",
+            "options": [
+              "6个月",
+              "2年",
+              "7-15年",
+              "50年"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "什么新的战略指标正在取代每美元FLOPS？",
+            "options": [
+              "供电时间",
+              "上市时间",
+              "到硅片的时间",
+              "上市时间"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "“棕地”通常指什么？",
+            "options": [
+              "一块尚未开发的绿地",
+              "带有现有电网的废弃工业场地",
+              "太阳能农场",
+              "海上风电厂"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "以下哪个是典型的棕地候选？",
+            "options": [
+              "一个购物中心",
+              "一个退役的燃煤电厂",
+              "一个正在使用的数据中心",
+              "一个住宅区"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "为什么棕地比绿地有吸引力？",
+            "options": [
+              "仅仅是租金更便宜",
+              "现有电网+冷却+许可证",
+              "更多的阳光照射",
+              "离机场更近"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_III",
+        "title": "主权AI与元国家",
+        "badge": "主权堆栈",
+        "questions": [
+          {
+            "q": "“元国家”的一个例子是什么？",
+            "options": [
+              "加利福尼亚",
+              "Próspera",
+              "东京",
+              "欧盟"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "为什么元国家对超大规模企业来说是“非消费”的？",
+            "options": [
+              "没有互联网",
+              "太小或政治不规范",
+              "禁止人工智能",
+              "没有可用的GPU"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "以下哪个国家未被提及为主权AI购买者？",
+            "options": [
+              "印度",
+              "沙特阿拉伯",
+              "日本",
+              "冰岛"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "全球硬件异构性受何推动？",
+            "options": [
+              "时尚",
+              "地缘政治结盟",
+              "芯片颜色",
+              "货币兑换"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "NEOM是哪个的典范？",
+            "options": [
+              "DePIN协议",
+              "网络国家/特许城市项目",
+              "NVIDIA产品",
+              "美国的一个州"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "REMEDY",
+        "title": "Christensen的药方",
+        "badge": "自治单位",
+        "questions": [
+          {
+            "q": "“自治单位操作手册”规定了多少项要求？",
+            "options": [
+              "3",
+              "5",
+              "7",
+              "10"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "自治单位应该直接向谁汇报？",
+            "options": [
+              "财务总监",
+              "Jensen Huang",
+              "董事会",
+              "公关团队"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "自治单位应该以什么来衡量其绩效？",
+            "options": [
+              "毛利率",
+              "平均售价",
+              "采纳率和生态系统增长",
+              "媒体报道"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "该操作手册推荐的耐心周期是多久？",
+            "options": [
+              "6–12个月",
+              "2–3年",
+              "4–7年",
+              "20+年"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "为什么该单位必须与圣克拉拉物理隔离？",
+            "options": [
+              "租金更便宜",
+              "避免文化僵化",
+              "天气更好",
+              "出于税收原因"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "label": "常见问题",
+    "headline": "常见问题。",
+    "items": [
+      {
+        "q": "NVIDIA真的注定要失败吗？",
+        "a": "作者承认NVIDIA衰落的可能性有25-35%。本书是对结构性风险的“操作性尸检”，而非股价预测。"
+      },
+      {
+        "q": "为什么称之为“困境”？",
+        "a": "因为对现有业务的卓越管理正是颠覆的机制。NVIDIA无法通过改进现有业务来解决这个问题。"
+      },
+      {
+        "q": "这是一本反NVIDIA的书吗？",
+        "a": "不。它尊重Jensen Huang的过往成就，并明确指出他曾两次克服困境。"
+      },
+      {
+        "q": "什么是“元国家”？",
+        "a": "一个新兴的数字优先管辖区、网络国家或特许城市，拥有主权权力——Próspera、NEOM等。"
+      },
+      {
+        "q": "我该从何开始？",
+        "a": "阅读15页的SlideShare演示文稿。然后是这里的问答。最后是这本书。"
+      }
+    ]
+  },
+  "footer": {
+    "rights": "版权所有。",
+    "colophon": "由奶油、墨水、橙色和石灰制成。由偏执驱动。"
+  }
+}

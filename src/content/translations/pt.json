@@ -1,0 +1,743 @@
+{
+  "meta": {
+    "title": "O Dilema do Inovador da NVIDIA",
+    "subtitle": "FÁBRICAS DE IA, O IMPÉRIO DA COMPUTAÇÃO E A DISRUPÇÃO DE BAIXO PARA CIMA.",
+    "author": "SLAVA SOLODKIY",
+    "classification": "[CLASSIFICAÇÃO: PÚBLICO]",
+    "rev": "TE_MANUAL.1.5 // ESTRATÉGICO",
+    "by": "POR",
+    "published": "Publicado",
+    "publishedValue": "ABRIL 2026",
+    "pages": "Páginas",
+    "pagesValue": "114",
+    "format": "Formato",
+    "formatValue": "Capa mole · eBook",
+    "topic": "Tópico",
+    "topicValue": "ARMADILHA ESTRUTURAL DE $5T"
+  },
+  "nav": {
+    "book": "LIVRO",
+    "qa": "PERGUNTAS E RESPOSTAS",
+    "quiz": "QUESTIONÁRIO",
+    "listen": "OUVIR",
+    "buy": "COMPRAR",
+    "language": "IDIOMA",
+    "next": "PRÓXIMO",
+    "back": "VOLTAR",
+    "skip": "PULAR",
+    "retry": "TENTAR NOVAMENTE",
+    "continue": "CONTINUAR",
+    "finish": "FINALIZAR"
+  },
+  "hero": {
+    "cta1": "Comprar na Amazon",
+    "cta2": "Todas as lojas",
+    "cta3": "Ouvir no Spotify",
+    "cta4": "Ler as Perguntas e Respostas",
+    "install": "Instalar App"
+  },
+  "thesis": {
+    "label": "A TESE · DUAS LEITURAS",
+    "headline": "A NVIDIA não está em apuros apesar da sua excelência. Ela está em apuros por causa dela.",
+    "lede": "Duas maneiras de dizer a mesma coisa. Escolha o seu tom. Deslize →",
+    "officialLabel": "// VISÃO GERAL OFICIAL",
+    "officialTitle": "A Armadilha de $5 Triliões.",
+    "officialBody": [
+      "Com uma avaliação de 5 triliões de dólares e uma margem bruta de 75%, a NVIDIA não está a vender chips — está a cobrar um imposto implacável sobre a economia global de IA. O que parece um império impenetrável é, na verdade, uma armadilha estrutural clássica.",
+      "Três forças estão a destruir as suas fundações: a deserção de hiperscalers para ASICs personalizados (Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA); a mudança da carga de trabalho de treino premium para inferência obsessiva com custos; e o vazamento do CUDA — um bloqueio proprietário contornado pelo OpenAI Triton e vLLM.",
+      "Para sobreviver, Jensen Huang deve fazer o impensável: desmembrar unidades autónomas, canibalizar as suas próprias margens de 75% e arriscar a ira de Wall Street para capturar os mercados invisíveis do futuro."
+    ],
+    "ironicLabel": "// ANTI-VISÃO GERAL AUTOIRÓNICA",
+    "ironicTitle": "NÃO LEIA ESTE LIVRO.",
+    "ironicBody": [
+      "Está cansado de livros de negócios que celebram o sucesso real? Acorda suado à noite preocupado que ganhar 750 milhões de dólares por dia seja, na verdade, uma doença terminal? Se não, por favor, largue este livro e vá embora.",
+      "O autor propõe seriamente que a NVIDIA separe unidades autónomas para dominar o mercado de aluguer de GPUs RTX 4090 de adolescentes ociosos (DePIN), compre centrais de carvão desativadas na Virgínia Ocidental e venda infraestruturas a cidades-estado cripto-libertárias nas Honduras.",
+      "E depois um Coda declara que nada disto importa, porque em 2050 o silício será substituído por computadores de carne hiperdensos cultivados em tanques por cientistas robôs chamados Adão e Eva."
+    ]
+  },
+  "cracks": {
+    "label": "VETORES DE DISRUPÇÃO · CINCO AMEAÇAS ASSIMÉTRICAS",
+    "headline": "Cinco rachaduras na fortaleza de $5T.",
+    "lede": "Nenhum é um único concorrente. Todos são respostas estruturais à margem de 75%.",
+    "items": [
+      {
+        "id": "CRACK_01",
+        "title": "A Deserção do Hyperscaler",
+        "body": "A margem bruta de 75% da NVIDIA funciona como um imposto. Google TPU v7, AWS Trainium 3, Microsoft Maia 200 e Meta MTIA representam aproximadamente US$ 120 bilhões de receita estrutural da NVIDIA em risco ao longo de um roteiro de cinco anos.",
+        "stat": "US$101B / ano · imposto de margem"
+      },
+      {
+        "id": "CRACK_02",
+        "title": "Inflexão Treino → Inferência",
+        "body": "Dois terços dos ciclos de computação de IA são agora inferência. As GPUs de US$ 40.000 e 1.000 watts da NVIDIA são excessivamente projetadas. Groq, Etched, Cerebras comem a camada de volume.",
+        "stat": "2/3 dos ciclos · inferência"
+      },
+      {
+        "id": "CRACK_03",
+        "title": "A Fuga de CUDA",
+        "body": "OpenAI Triton, vLLM, MLIR — camadas de abstração universais contornam a barreira de CUDA. O momento DeepSeek de abril de 2026 confirmou: a barreira não está a ser quebrada, está a ser contornada.",
+        "stat": "Triton · vLLM · MLIR"
+      },
+      {
+        "id": "CRACK_04",
+        "title": "Excesso de Desempenho",
+        "body": "A clássica condição de Christensen. A NVIDIA sobe no mercado perseguindo uma margem de treino de fronteira premium, enquanto o mercado de inferência de volume se comodifica por baixo.",
+        "stat": "o \"bom o suficiente\" vence"
+      },
+      {
+        "id": "CRACK_05",
+        "title": "Concentração de Clientes",
+        "body": "Dois clientes representaram 39% da receita total no 2º trimestre do ano fiscal de 2026. Os compradores são atores quase soberanos com profundo talento em semicondutores e motivação para escapar do imposto de margem.",
+        "stat": "39% / 2 clientes"
+      }
+    ]
+  },
+  "pillars": {
+    "label": "OS CINCO PILARES · ONDE O AMANHÃ É CONSTRUÍDO",
+    "headline": "Cinco novas redes de valor. Todas ignoradas pelo P&L de $5T.",
+    "lede": "Christensen chamou-lhes \"mercados não consumidores\". Hoje são demasiado pequenos para importar. Em 2030, constituirão a economia de infraestruturas da próxima era.",
+    "items": [
+      {
+        "badge": "PILAR I",
+        "title": "DePIN — Airbnb para IA",
+        "body": "GPUs prosumer agregadas (Akash, io.net, Render, Bittensor) a 30–50% do custo da nuvem. Longa cauda de computação, estruturalmente protegida do poder de precificação da NVIDIA."
+      },
+      {
+        "badge": "PILAR II",
+        "title": "Arbitragem de Energia Brownfield",
+        "body": "Centrais de carvão reaproveitadas, fundições, locais industriais desativados. O tempo de ativação de energia, e não os FLOPS por dólar, é a restrição limitadora do final da década de 2020."
+      },
+      {
+        "badge": "PILAR III",
+        "title": "IA Soberana e Metaestados",
+        "body": "Estados-nação (Índia, Arábia Saudita, EAU, Japão) e a coorte emergente de estados-rede, cidades-carta e zonas económicas especiais."
+      },
+      {
+        "badge": "PILAR IV",
+        "title": "Identidade Digital para Agentes",
+        "body": "Atestado a nível de silício e infraestrutura DID/VC para a economia de agentes. Em 2030 — Visa para agentes autónomos. Hoje — zero mil milhões de dólares."
+      },
+      {
+        "badge": "PILAR V",
+        "title": "Capital Humano Não Explorado",
+        "body": "Trabalhadores em reintegração, veteranos em transição, mão de obra industrial deslocada, pessoas em situação de rua, programas voluntários-piloto em prisões. A inovação criadora de mercado de Christensen, aplicada honestamente."
+      }
+    ]
+  },
+  "buy": {
+    "label": "COMPRE O LIVRO",
+    "headline": "Capa mole e eBook disponíveis globalmente.",
+    "lede": "Onze lojas. Escolha a mais próxima.",
+    "stores": [
+      {
+        "name": "Amazon EUA",
+        "region": "Estados Unidos · Capa mole e Kindle",
+        "url": "https://amzn.to/4udiaQi"
+      },
+      {
+        "name": "Amazon Reino Unido",
+        "region": "Reino Unido · Capa mole e Kindle",
+        "url": "https://amzn.to/4unQMzi"
+      },
+      {
+        "name": "eBay Reino Unido",
+        "region": "Reino Unido · Capa mole",
+        "url": "https://www.ebay.co.uk/itm/377152805299"
+      },
+      {
+        "name": "Apple Books",
+        "region": "Em todo o mundo · eBook",
+        "url": "https://books.apple.com/us/book/the-nvidia-innovators-dilemma/id6765670316"
+      },
+      {
+        "name": "Barnes & Noble",
+        "region": "EUA · Nook e Capa mole",
+        "url": "https://www.barnesandnoble.com/w/the-nvidia-innovators-dilemma-slava-solodkiy/1150068107"
+      },
+      {
+        "name": "Kobo",
+        "region": "Em todo o mundo · eBook",
+        "url": "https://www.kobo.com/gb/en/ebook/the-nvidia-innovator-s-dilemma"
+      },
+      {
+        "name": "Everand",
+        "region": "Em todo o mundo · Assinatura",
+        "url": "https://www.everand.com/book/1033632193/The-Nvidia-Innovator-s-Dilemma"
+      },
+      {
+        "name": "Bookshop.org",
+        "region": "Livrarias independentes",
+        "url": "https://bookshop.org/p/books/the-nvidia-innovator-s-dilemma-slava-solodkiy/9c14452f225f0706"
+      },
+      {
+        "name": "Thalia",
+        "region": "Alemanha · DE",
+        "url": "https://www.thalia.de/shop/home/artikeldetails/A1079613287"
+      },
+      {
+        "name": "Smashwords",
+        "region": "Em todo o mundo · eBook",
+        "url": "https://www.smashwords.com/books/view/2022379"
+      },
+      {
+        "name": "Books2Read",
+        "region": "Link universal · todas as lojas",
+        "url": "https://books2read.com/u/meWRNg"
+      }
+    ]
+  },
+  "listen": {
+    "label": "ASSISTIR · OUVIR · NAVEGAR",
+    "headline": "O livro em outros formatos.",
+    "lede": "Apresentação de slides, registo científico, guia em podcast, vídeo.",
+    "items": [
+      {
+        "type": "SlideShare",
+        "title": "O projeto visual",
+        "desc": "Deck de diagnóstico de quinze slides.",
+        "url": "https://www.slideshare.net/slideshow/the-nvidia-innovator-s-dilemma-ai-factories-the-compute-empire-and-the-disruption-that-comes-from-below/287288356",
+        "embed": "https://www.slideshare.net/slideshow/embed_code/key/GEWReCAME1O6uM"
+      },
+      {
+        "type": "Figshare",
+        "title": "Registro acadêmico citável",
+        "desc": "DOI 10.6084/m9.figshare.32133316",
+        "url": "https://figshare.com/articles/book/The_Nvidia_Innovator_s_Dilemma/32133316",
+        "embed": "https://widgets.figshare.com/articles/32133316/embed?show_title=1"
+      },
+      {
+        "type": "YouTube",
+        "title": "Vídeo explicativo curto",
+        "desc": "Assista no YouTube.",
+        "url": "https://youtu.be/6w0B6gKvybI",
+        "embed": "https://www.youtube.com/embed/6w0B6gKvybI"
+      },
+      {
+        "type": "Spotify",
+        "title": "Guia de podcast",
+        "desc": "Ouça no Spotify.",
+        "url": "https://open.spotify.com/episode/624jFRaxTMb5D5Qe67rO3H"
+      },
+      {
+        "type": "Apple Podcasts",
+        "title": "Guia de podcast",
+        "desc": "Ouça no Apple Podcasts.",
+        "url": "https://podcasts.apple.com/us/podcast/the-nvidia-innovators-dilemma/id1896016219?i=1000765316324"
+      }
+    ]
+  },
+  "qa": {
+    "label": "Q&A · GUIA DE ESTUDO",
+    "headline": "O livro, dissecado.",
+    "lede": "Pesquise, filtre e toque para expandir. Depois teste-se no questionário.",
+    "searchPlaceholder": "Pesquisar perguntas…",
+    "testMe": "Teste-me nisto →",
+    "items": [
+      {
+        "chapter": "CRACK_01",
+        "q": "O que é o \"Imposto NVIDIA\" e como ele impulsiona o comportamento dos hyperscalers?",
+        "a": "O 'imposto' refere-se às margens brutas de ~75% da NVIDIA, que os hyperscalers veem como uma transferência insustentável de seu capex para o lucro da NVIDIA. Isso fornece um enorme incentivo fiduciário para Google, Amazon e Microsoft desenvolverem ASICs personalizados internos (TPU, Trainium, Maia) para obter economias anuais de bilhões de dólares."
+      },
+      {
+        "chapter": "CRACK_02",
+        "q": "Como a principal 'tarefa a ser feita' na computação de IA mudou entre 2023 e 2026?",
+        "a": "Até 2023, o trabalho dominante era o treino de modelos de fronteira, exigindo um desempenho paralelo de alta precisão onde a NVIDIA era imbatível. Em 2026, a carga de trabalho mudou para a inferência, que recompensa o custo por token, a latência determinística e a aritmética de baixa precisão — áreas onde os chips premium da NVIDIA são excessivamente projetados."
+      },
+      {
+        "chapter": "CRACK_04",
+        "q": "Defina 'Excesso de Desempenho' em relação à GPU Blackwell B200 da NVIDIA.",
+        "a": "Ocorre quando um produto oferece mais desempenho do que a maioria dos clientes pode usar ou pagar. Para muitas cargas de trabalho de inferência padrão em 2026, o Blackwell B200 de US$ 40.000 é superdimensionado, permitindo que chips modulares 'bons o suficiente' ou ASICs especializados vençam em custo e eficiência."
+      },
+      {
+        "chapter": "CRACK_03",
+        "q": "O que foi o 'momento DeepSeek' de abril de 2026 e por que foi significativo?",
+        "a": "A DeepSeek lançou o V4-Flash treinado de ponta a ponta em silício Huawei Ascend, enquanto o V4-Pro foi otimizado para inferência Ascend. Isso provou que a barreira CUDA poderia ser contornada — usando NVIDIA para treino mas implementando em hardware soberano alternativo para inferência."
+      },
+      {
+        "chapter": "CRACK_03",
+        "q": "Explique o papel do OpenAI Triton e do vLLM no desvio modular de software.",
+        "a": "Triton e vLLM são camadas de abstração agnósticas a hardware que permitem aos desenvolvedores escrever código de alta performance que funciona em NVIDIA, AMD ou ASICs personalizados com eficiência quase nativa. Eles diminuem o valor estratégico da barreira CUDA, transferindo o bloqueio do ecossistema de software para meramente o desempenho por chip."
+      },
+      {
+        "chapter": "CRACK_01",
+        "q": "Por que o autor descreve as margens brutas de 75% da NVIDIA como 'algemas douradas'?",
+        "a": "Essas margens forçam a NVIDIA a priorizar apenas projetos de alta margem, tornando-a estruturalmente incapaz de buscar mercados de 'bom o suficiente' de baixa margem e alto volume. Qualquer movimento para segmentos de margem mais baixa ameaçaria o valor de mercado de US$ 5 bilhões da NVIDIA, que é precificado na manutenção dessas altas margens."
+      },
+      {
+        "chapter": "PILLAR_II",
+        "q": "O que é 'Energia Brownfield' e por que se tornou um gargalo estratégico?",
+        "a": "Brownfield refere-se a locais industriais aposentados ou parcialmente aposentados (centrais de carvão, fundições) que já possuem interconexões de rede e infraestrutura de refrigeração. São estratégicos porque o gargalo para a IA não são mais os chips, mas o 'tempo para ligar' — as filas de interconexão greenfield se estendem por até 15 anos."
+      },
+      {
+        "chapter": "PILLAR_I",
+        "q": "Como o DePIN funciona como o 'Airbnb para IA'?",
+        "a": "DePIN agrega milhões de GPUs prosumer e de consumidor ociosas numa rede unificada de inferência via uma camada de orquestração. Oferece capacidade de computação a 30–50% do custo das nuvens tradicionais, utilizando hardware já amortizado para outros usos como jogos."
+      },
+      {
+        "chapter": "PILLAR_III",
+        "q": "O que são 'Metaestados' e porquê são considerados clientes 'não consumidores'?",
+        "a": "Metaestados são jurisdições digitais emergentes, estados em rede e zonas económicas especiais (Próspera, NEOM) que operam com autoridade soberana. São 'não consumidores' porque são demasiado pequenos ou politicamente não convencionais para serem servidos pelos principais hiperescaladores — criando uma abertura para infraestruturas modulares de IA soberana."
+      },
+      {
+        "chapter": "REMEDY",
+        "q": "De acordo com Christensen, qual é o único remédio estrutural para um incumbente que enfrenta disrupção?",
+        "a": "Desmembrar unidades autónomas com os seus próprios P&Ls, métricas separadas (adoção em vez de margem), localizações físicas diferentes e permissão explícita para ignorar os KPIs principais da empresa-mãe. Isto permite que as novas unidades persigam os mercados de baixa margem e inconvenientes que a organização principal, de outra forma, sufocaria."
+      },
+      {
+        "chapter": "PILLAR_V",
+        "q": "Por que o autor propõe usar capital humano não explorado para o trabalho em IA?",
+        "a": "Os laboratórios de IA enfrentam uma escassez de US$ 5–10 bilhões em mão de obra de feedback humano de alta qualidade (RLHF). Trabalhadores em reinserção, veteranos, trabalhadores industriais deslocados e pessoas em situação de rua podem ser treinados como anotadores especialistas — usando a anotação de IA como um mecanismo de credenciamento para o mercado de trabalho formal."
+      },
+      {
+        "chapter": "CODA",
+        "q": "Qual é o 'horizonte pós-silício' descrito no Coda?",
+        "a": "DNA e computação biológica. O DNA pode armazenar cerca de 9 ordens de magnitude mais bits por grama do que o silício, e a computação biológica é 2-3 ordens de magnitude mais eficiente em termos de energia. Projetos de cientistas robôs como 'Adão' e 'Eva' apontam para a biologia como o substrato final para a IA."
+      }
+    ]
+  },
+  "quiz": {
+    "label": "QUESTIONÁRIO · NÍVEIS DE CAPÍTULO",
+    "headline": "Decifre o dilema.",
+    "lede": "Um nível por racha e pilar. Cinco perguntas. Vença todas para desbloquear o distintivo.",
+    "correct": "CORRETO",
+    "wrong": "ERRADO",
+    "score": "PONTUAÇÃO",
+    "youScored": "Sua pontuação",
+    "of": "de",
+    "badgeUnlocked": "DISTINTIVO DESBLOQUEADO",
+    "locked": "BLOQUEADO",
+    "completed": "COMPLETADO",
+    "start": "INICIAR NÍVEL",
+    "levels": [
+      {
+        "id": "CRACK_01",
+        "title": "A Deserção do Hyperscaler",
+        "badge": "SONEGADOR DE IMPOSTOS",
+        "questions": [
+          {
+            "q": "Qual é a margem bruta aproximada a que o 'Imposto NVIDIA' se refere?",
+            "options": [
+              "25%",
+              "50%",
+              "75%",
+              "90%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Qual destes NÃO é um ASIC de hyperscaler?",
+            "options": [
+              "Google TPU",
+              "AWS Trainium",
+              "Microsoft Maia",
+              "Apple M5"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "Qual % da receita da NVIDIA no 2º trimestre do ano fiscal de 2026 veio de apenas dois clientes?",
+            "options": [
+              "12%",
+              "25%",
+              "39%",
+              "60%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Qual é o principal motivo fiduciário para os hiperescalares construírem seu próprio silício?",
+            "options": [
+              "Melhor latência",
+              "Capturar a margem de lucro da NVIDIA",
+              "Menor pegada do chip",
+              "Mandato governamental"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Aproximadamente quanto da receita anual da NVIDIA está estruturalmente em risco devido à deserção de hiperescalares ao longo de cinco anos?",
+            "options": [
+              "US$ 5 bilhões",
+              "US$ 30 bilhões",
+              "US$ 120 bilhões",
+              "US$ 400 bilhões"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "CRACK_02",
+        "title": "Inflexão Treino → Inferência",
+        "badge": "INFERÊNCIA NATIVA",
+        "questions": [
+          {
+            "q": "Que fração dos ciclos de computação de IA é agora inferência?",
+            "options": [
+              "1/4",
+              "1/3",
+              "1/2",
+              "2/3"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "Preço aproximado de uma GPU NVIDIA Blackwell B200?",
+            "options": [
+              "$4.000",
+              "$10.000",
+              "$40.000",
+              "$120.000"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Qual startup utiliza SRAM on-chip e uma arquitetura de fluxo de dados para inferência de latência ultrabaixa?",
+            "options": [
+              "Cerebras",
+              "Groq",
+              "Etched",
+              "Tenstorrent"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "O Sohu da Etched é um ASIC especializado para quê?",
+            "options": [
+              "Modelos de difusão",
+              "Transformers",
+              "Aprendizado por reforço",
+              "Redes neurais de grafos"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "A inferência recompensa qual destas propriedades?",
+            "options": [
+              "Precisão FP32",
+              "Tolerância a falhas",
+              "Custo por token",
+              "Apenas tamanhos de lote gigantescos"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "CRACK_03",
+        "title": "A Fuga de CUDA",
+        "badge": "CONTORNADOR DE VALAS",
+        "questions": [
+          {
+            "q": "Qual projeto da OpenAI fornece uma linguagem de kernel agnóstica a hardware?",
+            "options": [
+              "DALL-E",
+              "Triton",
+              "Whisper",
+              "Codex"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "vLLM é melhor descrito como…",
+            "options": [
+              "Uma nova GPU",
+              "Uma estrutura de serviço LLM de código aberto",
+              "Um chip de substituição CUDA",
+              "Um provedor de nuvem"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "MLIR é por vezes chamado de…",
+            "options": [
+              "JVM para IA",
+              "LLVM para IA",
+              "Docker para IA",
+              "React para IA"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Em que silício a DeepSeek treinou seu modelo V4-Flash em abril de 2026?",
+            "options": [
+              "NVIDIA H100",
+              "AMD MI300",
+              "Huawei Ascend",
+              "Google TPU"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Aproximadamente quantos desenvolvedores existem no ecossistema CUDA da NVIDIA?",
+            "options": [
+              "60.000",
+              "600.000",
+              "6 milhões",
+              "60 milhões"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_I",
+        "title": "DePIN — Airbnb para IA",
+        "badge": "OPERADOR DE CAUDA LONGA",
+        "questions": [
+          {
+            "q": "Qual destes é uma rede de computação DePIN?",
+            "options": [
+              "Akash",
+              "Stripe",
+              "Snowflake",
+              "Datadog"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "DePIN tipicamente entrega computação a que % do custo da nuvem?",
+            "options": [
+              "80–100%",
+              "60–80%",
+              "30–50%",
+              "5–10%"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Qual GPU de consumo é a unidade de fornecimento canónica de DePIN em 2026?",
+            "options": [
+              "GTX 1080",
+              "RTX 4090",
+              "Tesla V100",
+              "M1 Ultra"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "A principal contribuição de Bittensor para o DePIN é…",
+            "options": [
+              "Uma nova GPU",
+              "Uma camada de incentivo para IA distribuída",
+              "Um centro de dados na nuvem",
+              "Um fork CUDA"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Por que a DePIN está estruturalmente protegida do poder de precificação da NVIDIA?",
+            "options": [
+              "Subsídios governamentais",
+              "Hardware já amortizado para outros usos",
+              "Licença CUDA exclusiva",
+              "Apenas eletricidade mais barata"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_II",
+        "title": "Arbitragem de Energia Brownfield",
+        "badge": "TEMPO DE ATIVAÇÃO DE ENERGIA",
+        "questions": [
+          {
+            "q": "As filas de interconexão de rede greenfield agora se estendem por até…",
+            "options": [
+              "6 meses",
+              "2 anos",
+              "7–15 anos",
+              "50 anos"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Qual é a nova métrica estratégica que substitui FLOPS-por-dólar?",
+            "options": [
+              "Tempo de ativação da energia",
+              "Tempo de lançamento no mercado",
+              "Tempo até ao silício",
+              "Tempo até ao IPO"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "Um site 'brownfield' tipicamente significa…",
+            "options": [
+              "Um terreno baldio 'greenfield'",
+              "Local industrial desativado com rede existente",
+              "Fazenda solar",
+              "Eólica offshore"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Qual destes é um candidato típico a brownfield?",
+            "options": [
+              "Um centro comercial",
+              "Uma central termoelétrica desativada",
+              "Um centro de dados já em uso",
+              "Uma zona residencial"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Por que os locais brownfield são atraentes em comparação com os greenfield?",
+            "options": [
+              "Apenas terreno mais barato",
+              "Rede e refrigeração existentes + licenças",
+              "Mais exposição ao sol",
+              "Mais perto de aeroportos"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "PILLAR_III",
+        "title": "IA Soberana e Metaestados",
+        "badge": "PILHA SOBERANA",
+        "questions": [
+          {
+            "q": "Qual é um exemplo de 'metaestado'?",
+            "options": [
+              "Califórnia",
+              "Próspera",
+              "Tóquio",
+              "UE"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Por que os metaestados são 'não consumidores' para os hiperescaladores?",
+            "options": [
+              "Sem internet",
+              "Muito pequenos ou politicamente não padronizados",
+              "IA banida",
+              "Sem GPUs disponíveis"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Qual nação-estado NÃO é mencionada como um comprador de IA soberana?",
+            "options": [
+              "Índia",
+              "Arábia Saudita",
+              "Japão",
+              "Islândia"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "O que impulsiona a heterogeneidade de hardware globalmente?",
+            "options": [
+              "Moda",
+              "Alinhamento geopolítico",
+              "Cor do chip",
+              "Câmbio da moeda"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "O que exemplifica a NEOM?",
+            "options": [
+              "Um protocolo DePIN",
+              "Um projeto de estado de rede / cidade autônoma",
+              "Um produto NVIDIA",
+              "Um estado dos EUA"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "id": "REMEDY",
+        "title": "A Prescrição de Christensen",
+        "badge": "UNIDADE AUTÔNOMA",
+        "questions": [
+          {
+            "q": "Quantos requisitos o 'Manual da Unidade Autónoma' especifica?",
+            "options": [
+              "3",
+              "5",
+              "7",
+              "10"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Uma unidade autónoma deve reportar diretamente a…",
+            "options": [
+              "O CFO",
+              "Jensen Huang",
+              "A administração",
+              "A equipe de RP"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Uma unidade autônoma deve ser julgada sobre o quê?",
+            "options": [
+              "Margem bruta",
+              "ASP",
+              "Adoção e crescimento do ecossistema",
+              "Cobertura da imprensa"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Qual horizonte de tolerância o manual recomenda?",
+            "options": [
+              "6 a 12 meses",
+              "2 a 3 anos",
+              "4 a 7 anos",
+              "Mais de 20 anos"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Por que a unidade deve ser fisicamente separada de Santa Clara?",
+            "options": [
+              "Aluguel mais barato",
+              "Evitar a ossificação cultural",
+              "Melhor clima",
+              "Motivos fiscais"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Perguntas frequentes.",
+    "items": [
+      {
+        "q": "A NVIDIA está realmente condenada?",
+        "a": "O autor admite 25–35% de confiança na queda da NVIDIA. O livro é uma 'autópsia operacional' de risco estrutural, não uma previsão de preço de ações."
+      },
+      {
+        "q": "Por que chamá-lo de 'dilema'?",
+        "a": "Porque a excelente gestão do negócio atual é precisamente o mecanismo de disrupção. A NVIDIA não pode resolver isso sendo melhor no que já faz."
+      },
+      {
+        "q": "Este é um livro anti-NVIDIA?",
+        "a": "Não. Ele trata o histórico de Jensen Huang com respeito e nota explicitamente que ele já venceu o dilema duas vezes antes."
+      },
+      {
+        "q": "O que é um 'metaestado'?",
+        "a": "Uma jurisdição digital-primeira emergente, um estado de rede ou cidade charter operando com autoridade soberana — Próspera, NEOM, etc."
+      },
+      {
+        "q": "Onde devo começar?",
+        "a": "Leia o deck de 15 slides do SlideShare. Depois as Perguntas e Respostas aqui. Em seguida, o livro."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "colophon": "Feito com creme, tinta, laranja e limão. Alimentado pela paranoia."
+  }
+}
