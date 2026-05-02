@@ -75,6 +75,29 @@ body {
   60% { transform: translateX(-3px); }
   80% { transform: translateX(3px); }
 }
+@keyframes tap-rgb {
+  0%   { text-shadow: 0 0 transparent, 0 0 transparent; filter: none; }
+  20%  { text-shadow: 3px 0 var(--orange), -3px 0 var(--lime); filter: hue-rotate(8deg); }
+  40%  { text-shadow: -3px 0 var(--orange), 3px 0 var(--lime); }
+  60%  { text-shadow: 2px 0 var(--lime), -2px 0 var(--orange); }
+  100% { text-shadow: 0 0 transparent, 0 0 transparent; filter: none; }
+}
+.tap-glitch { animation: tap-rgb 0.36s ease-out; }
+.tap-glitch::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(255,85,0,0.04) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 999;
+  animation: scanline 0.36s linear;
+}
+
+  0%,100% { transform: translateX(0); filter: none; }
+  20% { transform: translateX(-4px); filter: hue-rotate(15deg); }
+  40% { transform: translateX(4px); filter: hue-rotate(-15deg); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
 
 .glitch-text {
   position: relative;
