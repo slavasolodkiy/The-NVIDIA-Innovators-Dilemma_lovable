@@ -1,12 +1,6 @@
 I found the actual issue: `src/routes/__root.tsx` still has raw line breaks inside normal double-quoted strings at lines 33, 40, and 49. That is invalid JavaScript/TypeScript, so the production build stops with `Unterminated string constant. (33:38)` every time.
 
-Do I know what the issue is? Yes. The file currently still contains this broken pattern:
-
-```tsx
-content: "ISBN: 9798235142671 (e-Book)
-ISBN: 9798195009434 (Paperback)
-..."
-```
+Do I know what the issue is? Yes. The file currently still contains metadata content written as a normal quoted string spread across multiple physical lines.
 
 A normal `"..."` string cannot span multiple lines. The previous intended fix did not persist in the current file, so publishing is still seeing the same bad code.
 
