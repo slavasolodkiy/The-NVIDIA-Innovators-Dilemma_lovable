@@ -2,6 +2,16 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 
+const SITE_TITLE = "The NVIDIA Innovator's Dilemma";
+const SITE_DESCRIPTION = [
+  "ISBN: 9798235142671 (e-Book)",
+  "ISBN: 9798195009434 (Paperback)",
+  "DOI 10.6084/m9.figshare.32133316",
+  "ASIN: B0GZ42SBNY (e-Book)",
+  "https://www.dram.gold (Official Page)",
+].join(" \u00B7 ");
+const SOCIAL_IMAGE_URL = "https://storage.googleapis.com/gpt-engineer-file-uploads/Mv5rAadNX1UWIuPV5Qm5FAWSS6p2/social-images/social-1777718182607-NVIDIA-Innovators-Dilemma_logo.webp";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
